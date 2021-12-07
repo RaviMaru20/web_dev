@@ -1,13 +1,82 @@
-# Team Assignment Instructions
+# Instructions
 
-[Part2](#part2) 
 
-[Part3](#part3) 
-
-[Part4](#part4) 
+[Wireframes](#wireframes)
 
 [Ghibli Park Design Ideas](#park)
 
+[Assignment Part1](#part1) 
+
+[Assignment Part2](#part2) 
+
+[Assignment Part3](#part3) 
+
+[Assignment Part4](#part4) 
+
+## Wireframes
+
+### Homepage & Useful Information & Attractions & Mobile
+
+<image src="https://user-images.githubusercontent.com/20574134/145001220-86218bdf-1836-413a-aef7-e22330836b40.png" width="50%"><image src="https://user-images.githubusercontent.com/20574134/145001297-78c989d1-7859-4c8c-95e7-c2986dba8872.png" width="50%">
+ 
+ <image src="https://user-images.githubusercontent.com/20574134/145001361-f3f1d50b-7e4c-4f49-8835-7f1d8ed119d5.png" width="50%"><image src="https://user-images.githubusercontent.com/20574134/145001418-6bca10a2-a666-4309-8bd6-609d5deb0fed.png" width="20%">
+
+***
+
+
+<div id="park">
+
+## The Ghibli Park Design
+
+The theme park will be about the Studio Ghibli universe. Studio Ghibli is a renowned animation movies company that created movies such as My Neighbor Totoro and Spirited Away.
+
+The name of the theme park would be Studio Ghibli Theme Park.
+
+### Types of Attractions:
+
+1.	Ghibli’s Giant Warehouse
+2.	My Neighbor Totoro-themed Dondoko Forest
+3.	Princess Mononoke Village
+4.	Springtime of Life Hill from Howl’s Moving Castle and Castle in the Sky
+5.	Witch Valley based on Kiki’s Delivery Service
+
+### 	Different Visitors:
+
+1.	Fans from Ghibli Anime films
+2.	Family with kids for vacation
+3.	Japanese Culture lovers
+4.	Nature Lovers
+
+
+### Services Provided:
+
+1.	Dining
+2.	Shops
+3.	Entertainment
+4.	ATMs
+5.	First Aid Stations
+6.	Information Desk
+7.	Accessibility Information
+8.	Guest Relations
+9.	Locker Facilities
+10.	Strollers and Wheelchairs Rent
+11.	Wi-Fi network
+
+### Information Before Visit:
+
+1.	How to get there
+2.	Weather Forecast
+3.	Date and Time Availability
+4.	Where to buy tickets
+5.	Safety and Requirement
+6.	Policies and Restrictions
+
+</div>
+
+***
+
+<div id="part1">
+ 
 ## Team assignment. Part 1
 
 1.**Agree on the purpose of the web site**
@@ -44,6 +113,7 @@ Marks will be awarded for the following:
 
 - Design of the wireframes as a clear model for the web site   
 
+ </div>
 
 ***
 
@@ -171,52 +241,4 @@ Marks will be awarded for the following:
 
 ***
 
-<div id="park">
-
-## The Ghibli Park Design
-
-The theme park will be about the Studio Ghibli universe. Studio Ghibli is a renowned animation movies company that created movies such as My Neighbor Totoro and Spirited Away.
-
-The name of the theme park would be Studio Ghibli Theme Park.
-
-### Types of Attractions:
-
-1.	Ghibli’s Giant Warehouse
-2.	My Neighbor Totoro-themed Dondoko Forest
-3.	Princess Mononoke Village
-4.	Springtime of Life Hill from Howl’s Moving Castle and Castle in the Sky
-5.	Witch Valley based on Kiki’s Delivery Service
-
-### 	Different Visitors:
-
-1.	Fans from Ghibli Anime films
-2.	Family with kids for vacation
-3.	Japanese Culture lovers
-4.	Nature Lovers
-
-
-### Services Provided:
-
-1.	Dining
-2.	Shops
-3.	Entertainment
-4.	ATMs
-5.	First Aid Stations
-6.	Information Desk
-7.	Accessibility Information
-8.	Guest Relations
-9.	Locker Facilities
-10.	Strollers and Wheelchairs Rent
-11.	Wi-Fi network
-
-### Information Before Visit:
-
-1.	How to get there
-2.	Weather Forecast
-3.	Date and Time Availability
-4.	Where to buy tickets
-5.	Safety and Requirement
-6.	Policies and Restrictions
-
-</div>
 
