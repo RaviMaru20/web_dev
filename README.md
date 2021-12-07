@@ -1,6 +1,12 @@
 # Team Assignment Instructions
 
-[Part2](#part2) [Part3](#part3) [Part4](#part4)
+[Part2](#part2) 
+
+[Part3](#part3) 
+
+[Part4](#part4) 
+
+[Ghibli Park Design Ideas](#park)
 
 ## Team assignment. Part 1
 
@@ -163,4 +169,54 @@ Marks will be awarded for the following:
 
 </div>
 
+***
+
+<div id="park">
+
+## The Ghibli Park Design
+
+The theme park will be about the Studio Ghibli universe. Studio Ghibli is a renowned animation movies company that created movies such as My Neighbor Totoro and Spirited Away.
+
+The name of the theme park would be Studio Ghibli Theme Park.
+
+### Types of Attractions:
+
+1.	Ghibli’s Giant Warehouse
+2.	My Neighbor Totoro-themed Dondoko Forest
+3.	Princess Mononoke Village
+4.	Springtime of Life Hill from Howl’s Moving Castle and Castle in the Sky
+5.	Witch Valley based on Kiki’s Delivery Service
+
+### 	Different Visitors:
+
+1.	Fans from Ghibli Anime films
+2.	Family with kids for vacation
+3.	Japanese Culture lovers
+4.	Nature Lovers
+
+
+### Services Provided:
+
+1.	Dining
+2.	Shops
+3.	Entertainment
+4.	ATMs
+5.	First Aid Stations
+6.	Information Desk
+7.	Accessibility Information
+8.	Guest Relations
+9.	Locker Facilities
+10.	Strollers and Wheelchairs Rent
+11.	Wi-Fi network
+
+### Information Before Visit:
+
+1.	How to get there
+2.	Weather Forecast
+3.	Date and Time Availability
+4.	Where to buy tickets
+5.	Safety and Requirement
+6.	Policies and Restrictions
+
+</div>
 
