@@ -1,109 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- The head section of the page. Includes metadata about the website. -->
 
-<!-- The head section of the page. Includes metadata about the website. -->
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Ghibli Park - Homepage</title>
     <!---Title on the tab of Browser--->
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- This is the header section of the page, this includes the navigation bar and the logo. And options to login and change the language -->
     <header>
-        <a><img src="/image/logo.png" alt="Park Logo" height="200" width="400"><b>Welcome to Welcome To The Ghibli
-                Park</b></a>
+      <a
+        ><img
+          src="/image/logo.png"
+          alt="Park Logo"
+          height="200"
+          width="400"
+        /><b>Welcome to Welcome To The Ghibli Park</b></a
+      >
 
-        <!-- Main navigation links -->
-        <nav>
-            <a href="/index.html">Home</a>|
-            <a href="/attractions.html">Attractions</a>|
-            <a href="/Info.html">Useful Information</a>|
-            <a href="#">Book Online</a>|
-            <a href="#">Language</a>
-        </nav>
+      <!-- Main navigation links -->
+      <nav>
+        <a href="/index.html">Home</a>|
+        <a href="/attractions.html">Attractions</a>|
+        <a href="/Info.html">Useful Information</a>|
+        <a href="#">Book Online</a>|
+        <a href="#">Language</a>
+      </nav>
 
-        <!-- sign in and language selection -->
-        <div class="top-links">
-            <select>
-                <option>en</option>
-                <option>af</option>
-                <option>fr</option>
-            </select>>
-            <a href="">Sign in</a>
-        </div>
+      <!-- sign in and language selection -->
+      <div class="top-links">
+        <select>
+          <option>en</option>
+          <option>af</option>
+          <option>fr</option></select
+        >>
+        <a href="">Sign in</a>
+      </div>
     </header>
 
     <!-- Main page content will be placed in main -->
     <main>
-        <!-- Main content is broken up into sections. -->
-        <section>
-            <h2>Current News Banner</h2>
-            <!---current news img link of the park--->
-            <img src="/image/design.jpeg" alt="Current events" height="500" width="900">
+      <!-- The main sliding banner -->
+      <section class="main-banner-container">
+        <!-- This is the main sliding banner where different sections will be displayed, such as latest news, offers etc. -->
+        <div class="main-banner">
+          <!-- the link to slide to the next banner -->
+          <a href="#">Previous</a>
+          <!-- the current news banner -->
+          <div class="current-news">
+            <h1>Current News</h1>
+            <p>All the latest news will bew displayed here</p>
+          </div>
+          <!-- This link will slide to the next available banner -->
+          <a href="#">Next</a>
+        </div>
+      </section>
+      <!-- Main content is broken up into sections. -->
+      <section>
+        <h2>Current News Banner</h2>
+        <!---current news img link of the park--->
+        <img
+          src="/image/design.jpeg"
+          alt="Current events"
+          height="500"
+          width="900"
+        />
 
-            <div class="attractions">
-                <div>
-                    <h2>Attraction 1 </h2>
-                    <img src="/image/warehouse.jpeg" alt="" height="200" width="300">
-                </div>
-                <div>
-                    <h2> Attraction 2 </h2>
-                    <img src="/image/forest.jpeg" alt="" height="200" width="300">
-                </div>
-                <div>
-                    <h2> Attraction 3 </h2>
-                    <img src="image/village.jpeg" alt="" height="200" width="300">
-                </div>
-            </div>
-        </section>
+        <div class="attractions">
+          <div>
+            <h2>Attraction 1</h2>
+            <img src="/image/warehouse.jpeg" alt="" height="200" width="300" />
+          </div>
+          <div>
+            <h2>Attraction 2</h2>
+            <img src="/image/forest.jpeg" alt="" height="200" width="300" />
+          </div>
+          <div>
+            <h2>Attraction 3</h2>
+            <img src="image/village.jpeg" alt="" height="200" width="300" />
+          </div>
+        </div>
+      </section>
 
-        <!---hr tags are the section break lines--->
-        <hr>
+      <!---hr tags are the section break lines--->
+      <hr />
 
-
-        <section>
-            <h2>Category of visitors</h2>
-            <!---category of visitors img link of the park--->
-            <ul>
-                <li>
-                    <a href="#">Fans</a>
-                </li>
-                <li>
-                    <a href="#">Family</a>
-                </li>
-                <li>
-                    <a href="#">Kids</a>
-                </li>
-                <li>
-                    <a href="#">Japanese Artifacts</a>
-                </li>
-            </ul>
-
-        </section>
+      <section>
+        <h2>Category of visitors</h2>
+        <!---category of visitors img link of the park--->
+        <ul>
+          <li>
+            <a href="#">Fans</a>
+          </li>
+          <li>
+            <a href="#">Family</a>
+          </li>
+          <li>
+            <a href="#">Kids</a>
+          </li>
+          <li>
+            <a href="#">Japanese Artifacts</a>
+          </li>
+        </ul>
+      </section>
     </main>
 
-    <hr>
+    <hr />
 
     <!-- This is the footer section of the page, this includes the copyright and the contact information -->
     <footer>
-        <div>
-            <h2>Contact us</h2>
-        </div>
-        <div>
-            <h3>sitemap</h3>
-        </div>
-        <div>
-            <h3>Download App</h3>
-        </div>
-        <p>Copy right </p>
-        <a href="">Policies and restricions</a>
+      <div>
+        <h2>Contact us</h2>
+      </div>
+      <div>
+        <h3>Sitemap</h3>
+      </div>
+      <div>
+        <h3>Download App</h3>
+      </div>
+      <p>Copy right</p>
+      <a href="">Policies and restricions</a>
     </footer>
-
-</body>
-
+  </body>
 </html>
