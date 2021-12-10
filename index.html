@@ -1,150 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- The head section of the page. Includes metadata about the website. -->
+<!-- The head section of the page. Includes metadata about the website. -->
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Ghibli Park - Homepage</title>
-    <!---Title on the tab of Browser--->
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Ghibli Park - Homepage</title>
+  <!---Title on the tab of Browser--->
+</head>
 
-  <body>
-    <!-- This is the header section of the page, this includes the navigation bar and the logo. And options to login and change the language -->
-    <header>
-      <a
-        ><img
-          src="/image/logo.png"
-          alt="Park Logo"
-          height="200"
-          width="400"
-        /><b>Welcome to Welcome To The Ghibli Park</b></a
-      >
+<body>
+  <!-- This is the header section of the page, this includes the navigation bar and the logo. And options to login and change the language -->
+  <header>
+    <p>
+      Covid 19 Notification
+    </p>
+    <a>
+      <img src="/image/logo.png" alt="Park Logo" height="200" width="400">
+      <b>Welcome to Welcome To The Ghibli Park</b>
+    </a>
 
-      <!-- Main navigation links -->
-      <nav>
-        <a href="/index.html">Home</a>|
-        <a href="/attractions.html">Attractions</a>|
-        <a href="/Info.html">Useful Information</a>|
-        <a href="#">Book Online</a>|
-        <a href="#">Language</a>
-      </nav>
+    <!-- Main navigation links -->
+    <nav>
+      <a href="/index.html">Home</a>|
+      <a href="/attractions.html">Attractions</a>|
+      <a href="/Info.html">Useful Information</a>|
+      <a href="#">Book Online</a>|
+      <a href="#">Language</a>
 
-      <!-- sign in and language selection -->
-      <div class="top-links">
-        <select>
-          <option>en</option>
-          <option>af</option>
-          <option>fr</option>
-        </select>
-        <a href="">Sign in</a>
+      <form action="">
+        <label for="search">Search</label>
+        <input id="search" name="search" type="text">
+      </form>
+    </nav>
+
+    <!-- sign in and language selection -->
+    <div class="top-links">
+      <select>
+        <option>en</option>
+        <option>af</option>
+        <option>fr</option>
+      </select>
+      <a href="">Sign in</a>
+    </div>
+  </header>
+
+  <!-- Main page content will be placed in main -->
+  <main>
+    <!-- The main sliding banner -->
+    <section class="main-banner-container">
+      <!-- This is the main sliding banner where different sections will be displayed, such as latest news, offers etc. -->
+      <div class="main-banner">
+        <!-- the link to slide to the next banner -->
+        <a href="#">Previous</a>
+        <!-- the current news banner -->
+        <div class="current-news">
+          <h1>Current News</h1>
+          <p>Desciption of current news</p>
+          <!---current news img link of the park--->
+          <img src="/image/design.jpeg" alt="Current events" height="500" width="900" />
+        </div>
+        <!-- This link will slide to the next available banner -->
+        <a href="#">Next</a>
       </div>
-    </header>
-
-    <!-- Main page content will be placed in main -->
-    <main>
-      <!-- The main sliding banner -->
-      <section class="main-banner-container">
-        <!-- This is the main sliding banner where different sections will be displayed, such as latest news, offers etc. -->
-        <div class="main-banner">
-          <!-- the link to slide to the next banner -->
-          <a href="#">Previous</a>
-          <!-- the current news banner -->
-          <div class="current-news">
-            <h1>Current News</h1>
-            <!---current news img link of the park--->
-            <img
-              src="/image/design.jpeg"
-              alt="Current events"
-              height="500"
-              width="900"
-            />
-          </div>
-          <!-- This link will slide to the next available banner -->
-          <a href="#">Next</a>
+    </section>
+    <!-- Main content is broken up into sections. -->
+    <section>
+      <div class="attractions">
+        <div>
+          <h2>Attraction 1</h2>
+          <img src="/image/warehouse.jpeg" alt="" height="200" width="300" />
+          <p>Description</p>
         </div>
-      </section>
-      <!-- Main content is broken up into sections. -->
-      <section>
-        <div class="attractions">
-          <div>
-            <h2>Attraction 1</h2>
-            <img src="/image/warehouse.jpeg" alt="" height="200" width="300" />
-          </div>
-          <div>
-            <h2>Attraction 2</h2>
-            <img src="/image/forest.jpeg" alt="" height="200" width="300" />
-          </div>
-          <div>
-            <h2>Attraction 3</h2>
-            <img src="image/village.jpeg" alt="" height="200" width="300" />
-          </div>
+        <div>
+          <h2>Attraction 2</h2>
+          <img src="/image/forest.jpeg" alt="" height="200" width="300" />
+          <p>Description</p>
         </div>
-      </section>
+        <div>
+          <h2>Attraction 3</h2>
+          <img src="image/village.jpeg" alt="" height="200" width="300" />
+          <p>Description</p>
+        </div>
+      </div>
+    </section>
 
-      <!---hr tags are the section break lines--->
-      <hr />
-
-      <section>
-        <h2>Category of visitors</h2>
-        <!---category of visitors img link of the park--->
-        <ul>
-          <li>
-            <a href="#">Fans</a>
-          </li>
-          <li>
-            <a href="#">Family</a>
-          </li>
-          <li>
-            <a href="#">Kids</a>
-          </li>
-          <li>
-            <a href="#">Japanese Artifacts</a>
-          </li>
-        </ul>
-      </section>
-    </main>
-
+    <!---hr tags are the section break lines--->
     <hr />
 
-    <!-- This is the footer section of the page, this includes the copyright and the contact information -->
-    <footer>
-      <div>
-        <form action="#">     <!-- replace "#" by submission page  -->
-          <label for="email">Get Latest News:</label>
-          <input type="email" id="email" placeholder="Email">
-          <input type="submit" value="SUBSCRIBE">
-        </form>
-      </div>
+    <section>
+      <h2>Category of visitors</h2>
+      <!---category of visitors img link of the park--->
+      <ul>
+        <li>
+          <a href="#">Ghibli Fans</a>
+        </li>
+        <li>
+          <a href="#">Family</a>
+        </li>
+        <li>
+          <a href="#">Japanese culture lovers</a>
+        </li>
+        <li>
+          <a href="#">Nature lovers</a>
+        </li>
+      </ul>
+    </section>
 
-      <div>
-        <h2>Contact us</h2>
-        <img src="image/phone.svg" atl="phone icon" height="30" width="30">
-        <a>(+81) xx xxx xxx</a><br>
-        <img src="image/mail.svg" atl="mail icon" height="30" width="30">
-        <a>contact@ghibli.com</a><br>
-      </div>
+    <hr>
 
-      <div>
-        <h3>Sitemap</h3>
-        <a href="#">List of Internal Website</a>
-        <br><br>
-        <a href="https://facebook.com"><img src="image/facebook.svg" atl="facebook icon" height="30" width="30"></a>
-        <a href="https://twitter.com"><img src="image/twitter.svg" atl="twitter icon" height="30" width="30"></a>
-        <a href="https://instagram.com"><img src="image/ins.svg" atl="instagram icon" height="30" width="30"></a>
-        <a href="https://youtube.com"><img src="image/youtube.svg" atl="youtube icon" height="30" width="30"></a>
-      </div>
+    <!-- This section is used to display the latest offers of the park. -->
+    <section>
+      <h1>Offers/Discount</h1>
+      <p>Information regarding discounts and upcoming offers</p>
+    </section>
 
-      <div>
-        <h3>Download App</h3>
-        <a href="https://www.apple.com/app-store"><img src="image/appstore.png" atl="appstore icon" height="30" width="90"></a>
-        <a href="https://play.google.com"><img src="image/playstore.png" atl="playstore icon" height="30" width="90"></a>
-      </div>
+    <!-- This section is used to display the apps that are available for the park. -->
+    <section>
+      <h1>Download our Apps</h1>
+      <p>Apps for Android and Apple</p>
+    </section>
+  </main>
 
-      <p>Copyright © 2021 Ghibli Park. All rights reserved.</p>
-      <a href="">Policies and restricions</a>
+  <hr />
 
-    </footer>
-  </body>
+  <!-- This is the footer section of the page, this includes the copyright and the contact information -->
+  <footer>
+
+    <!-- This will be the chat box for the website so that users can talk to an agent for help. -->
+    <div>
+      <img src="image/chat-icon.png" alt="Chat with us." width="60">
+    </div>
+    <div>
+      <form action="#">
+        <!-- replace "#" by submission page  -->
+        <label for="email">Get Latest News:</label>
+        <input type="email" id="email" placeholder="Email">
+        <input type="submit" value="SUBSCRIBE">
+      </form>
+    </div>
+
+    <!-- This is the contact information of the park -->
+    <div>
+      <h2>Contact us</h2>
+      <img src="image/phone.svg" atl="phone icon" height="30" width="30">
+      <a>(+81) xx xxx xxx</a><br>
+      <img src="image/mail.svg" atl="mail icon" height="30" width="30">
+      <a>contact@ghibli.com</a><br>
+    </div>
+
+    <!-- This section details the sitemap and social media links for the park -->
+    <div>
+      <h3>Sitemap</h3>
+      <a href="#">List of Internal Website</a>
+      <br><br>
+      <a href="https://facebook.com"><img src="image/facebook.svg" atl="facebook icon" height="30" width="30"></a>
+      <a href="https://twitter.com"><img src="image/twitter.svg" atl="twitter icon" height="30" width="30"></a>
+      <a href="https://instagram.com"><img src="image/ins.svg" atl="instagram icon" height="30" width="30"></a>
+      <a href="https://youtube.com"><img src="image/youtube.svg" atl="youtube icon" height="30" width="30"></a>
+    </div>
+
+    <!-- This section details Android and Apple apps for the park. -->
+    <div>
+      <h3>Download App</h3>
+      <a href="https://www.apple.com/app-store"><img src="image/appstore.png" atl="appstore icon" height="30"
+          width="90"></a>
+      <a href="https://play.google.com"><img src="image/playstore.png" atl="playstore icon" height="30" width="90"></a>
+    </div>
+
+    <!-- This is the copyright information of the park -->
+    <p>Copyright © 2021 Ghibli Park. All rights reserved.</p>
+    <a href="">Policies and restricions</a>
+
+  </footer>
+</body>
+
 </html>
