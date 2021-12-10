@@ -1,44 +1,116 @@
 <!DOCTYPE html>
+<html lang="en">
+  <!-- The head section of the page. Includes metadata about the website. -->
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Attractions</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Ghibli Park - Homepage</title>
+    <!---Title on the tab of Browser--->
+  </head>
 
-    <body>
+  <body>
+    <!-- This is the header section of the page, this includes the navigation bar and the logo. And options to login and change the language -->
+    <header>
+      <a
+        ><img
+          src="/image/logo.png"
+          alt="Park Logo"
+          height="200"
+          width="400"
+        /><b>Welcome to Welcome To The Ghibli Park</b></a
+      >
 
-        
-        <header>
+      <!-- Main navigation links -->
+      <nav>
+        <a href="/index.html">Home</a>|
+        <a href="/attractions.html">Attractions</a>|
+        <a href="/Info.html">Useful Information</a>|
+        <a href="#">Book Online</a>|
+        <a href="#">Language</a>
+      </nav>
 
-            <a><img src="/image/logo.png" alt="Park Logo" height="200" width="400"><b>Welcome to Welcome To The Ghibli Park</b></a>
-            
-            <nav>
-                <a href="/index.html">Home</a>|
-                <a href="/attractions.html">Attractions</a>|
-                <a href="/Info.html">Useful Information</a>|
-                <a href="#">Book Online</a>|
-                <a href="#">Language</a>       
-            </nav>
+      <!-- sign in and language selection -->
+      <div class="top-links">
+        <select>
+          <option>en</option>
+          <option>af</option>
+          <option>fr</option></select
+        >
+        <a href="">Sign in</a>
+      </div>
+    </header>
 
-        </header>
+    <!-- Main page content will be placed in main -->
+    <main>
+      <section>
+        <h2>Attractions</h2>
 
+        <!-- These buttons will filter the various categories of attractions -->
+        <ul class="tabs-navigation">
+          <li class="tab-button">
+            <button>All rides</button>
+          </li>
+          <li class="tab-button">
+            <button>Shows</button>
+          </li>
+          <li class="tab-button">
+            <button>Nature</button>
+          </li>
+          <li class="tab-button">
+            <button>Exhibitions</button>
+          </li>
+          <li class="tab-button">
+            <button>Visual Experience</button>
+          </li>
+        </ul>
 
-        <hr>
+        <!-- The selected attractions will be displayed here -->
+        <div class="tabs-content">
+          <div>
+            <img src="" alt="" />
+            <h6>Attraction 1</h6>
+          </div>
 
-        <main>
-            <p><h2>This Is The Attractions Page</h2></p>
-        </main>
+          <div>
+            <img src="" alt="" />
+            <h6>Attraction 2</h6>
+          </div>
 
-        <hr>
+          <div>
+            <img src="" alt="" />
+            <h6>Attraction 3</h6>
+          </div>
 
-        <footer>
-            <div><h2>Contact us</h2></div>
-            <div><h3>sitemap</h3></div>
-            <div><h3>Download App</h3></div>
-        </footer>
+          <div>
+            <img src="" alt="" />
+            <h6>Attraction 4</h6>
+          </div>
 
-    </body>
+          <div>
+            <img src="" alt="" />
+            <h6>Attraction 5</h6>
+          </div>
+        </div>
+      </section>
+    </main>
 
+    <hr />
+
+    <!-- This is the footer section of the page, this includes the copyright and the contact information -->
+    <footer>
+      <div>
+        <h2>Contact us</h2>
+      </div>
+      <div>
+        <h3>Sitemap</h3>
+      </div>
+      <div>
+        <h3>Download App</h3>
+      </div>
+      <p>Copy right</p>
+      <a href="">Policies and restricions</a>
+    </footer>
+  </body>
 </html>
