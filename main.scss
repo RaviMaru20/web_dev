@@ -1,0 +1,71 @@
+body{
+    background: white;
+    margin: 0;
+    font-family:apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.navbar{
+    background: white;
+    padding: 1em;
+
+    .logo-lable{
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+    nav{
+        display: none;
+    }
+    .nav-container{
+        display: flex;
+        place-content: space-between;
+    }
+    .mobile-menu{
+        cursor: pointer;
+    }
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: black;
+}
+
+section{
+    padding: 3em 1em;
+}
+
+main{
+    text-align: center;
+}
+.attractions{
+    display: flex;
+    place-content: space-between;
+}
+.contact-section{
+    
+    .container{
+        background: rgb(156, 208, 193);
+        display: flex;
+        place-content: space-between;
+        margin: 0;
+        padding: 1em;
+
+    }
+    
+}
+
+.copyright-section{
+    text-align: center;
+}
+
+.covid{
+    background: red;
+    text-align: center;
+    font-weight: bold;
+    
+}
