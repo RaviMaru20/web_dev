@@ -1,0 +1,8 @@
+.infoblock {
+    padding: 20px;
+    border: 2px solid darkgray;
+    margin: 1px;
+    border-style: dotted solid;
+    font-weight: 500;
+    place-content: space-between;
+  }
