@@ -6,6 +6,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="css/attractions.css">
   <title>Attractions - The Ghibli Park</title>
   <!---Title on the tab of Browser--->
 </head>
@@ -13,40 +15,51 @@
 <body>
   <!-- This is the header section of the page, this includes the navigation bar and the logo. And options to login and change the language -->
   <header>
-    <p>
+    <p class="covid">
       Covid 19 Notification
     </p>
-    <a>
-      <img src="/image/logo.png" alt="Park Logo" height="200" width="400">
-      <b>Welcome to Welcome To The Ghibli Park</b>
-    </a>
 
-    <!-- Main navigation links -->
-    <nav>
-      <a href="/index.html">Home</a>|
-      <a href="/attractions.html">Attractions</a>|
-      <a href="/Info.html">Useful Information</a>|
-      <a href="#">Special Offer</a>
-      <button formaction="#">Buy Tickets</button>
-      <form action="">
-        <label for="search">Search</label>
-        <input id="search" name="search" type="text">
-      </form>
-    </nav>
+    <!-- Main navBar section -->
+    <div class="navbar">
+      <div class="nav-container">
+        <a class="logo" href="/index.html"><img src="/image/logo.png" alt="Park Logo" height="50" width="90"></a>
+        <h1 class="logo-lable">The Ghibli Park</h1>
+        <img id="mobileIcon" class="mobile-menu" src="/image/open_menu.svg" alt="menu">
+        <nav>
+          <img id="mobileExit" class="mobile-menu"src="./image/close_menu.svg" alt="close">
+          <ul class="primary-nav">
+            <li class="current"><a href="/index.html">Home</a></li>
+            <li><a href="/attractions.html">Attractions</a></li>
+            <li><a href="/Info.html">Useful Information</a></li>
+            <li><a href="#">Special Offer</a></li>
+          </ul>
 
-    <!-- sign in and language selection -->
-      <a>Language</a>
-      <select>
-        <option>en</option>
-        <option>hi</option>
-        <option>af</option>
-        <option>fr</option>
-        <option>中文</option>
-        <option>日語</option>
-      </select>
 
-    <div class="top-links">
-      <a href="">Sign In</a>
+          <!-- sign in and language selection // this nav will be on the right corner of page-->
+          <ul class="secondary-nav">
+
+            <li class="buy"><a href="#">Buy Tickets</a></li>
+
+            <li><form action="">
+              <label for="search">Search</label>
+              <input id="search" name="search" type="text">
+            </form></li>
+
+            <li><select>
+              <option>Eng</option>
+              <option>Hin</option>
+              <option>Afr</option>
+              <option>Fr</option>
+              <option>中文</option>
+              <option>日語</option>
+            </select></li>
+
+            <li><a href="#">Sign In</a></li>
+
+          </ul>
+
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -57,20 +70,21 @@
 
       <!-- These buttons will filter the various categories of attractions -->
       <ul class="tabs-navigation">
-        <li class="tab-button">
-          <button>All rides</button>
+        <li class="tab-button active">
+          <img src="image/appstore.png">
+          <span>All rides</span>
         </li>
         <li class="tab-button">
-          <button>Shows</button>
+          <span>Shows</span>
         </li>
         <li class="tab-button">
-          <button>Nature</button>
+          <span>Nature</span>
         </li>
         <li class="tab-button">
-          <button>Exhibitions</button>
+          <span>Exhibitions</span>
         </li>
         <li class="tab-button">
-          <button>Visual Experience</button>
+          <span>Visual Experience</span>
         </li>
       </ul>
 

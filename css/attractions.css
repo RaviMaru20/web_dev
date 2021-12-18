@@ -1,0 +1,33 @@
+.tabs-navigation{
+    display: flex;
+}
+
+.tabs-navigation li:first-child{
+    border-left: 1px solid #bbb;
+}
+
+.tabs-navigation li{
+    flex-basis: 0;
+    flex-grow: 1;
+    border: 1px solid #bbb;
+    border-left: none;
+    color: #bbb;
+}
+
+.tabs-navigation li.active{
+    border-bottom: none;
+    color: #3793BC;
+}
+
+.tabs-navigation li img{
+    width: 50%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: block;
+    margin: 0 auto;
+}
+
+.tabs-navigation li button{
+    width: 75%;
+    border: none !important;
+}
