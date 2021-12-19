@@ -1,0 +1,21 @@
+.content-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+blockquote {
+    background-color: #ccc;
+    border-left: 10px solid #999;
+    margin: 0 auto;
+    padding: 1em;
+    font-style: italic;
+}
+
+.mb-1{
+    margin-bottom: 1em;;
+}
