@@ -1,0 +1,227 @@
+/* global stylings */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    font-family:'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+h2 {
+    font-size: 4.8rem;
+    
+}
+h3 {
+    font-size: 2.8rem;
+    font-weight: normal;
+}
+h4 {
+    font-size: 2.4rem;
+}
+p {
+    font-size: 2rem;
+}
+a {
+    color: white;
+    text-decoration: none;
+    
+}
+li, button {
+    font-size: 2rem;
+}
+
+
+
+/******* nav section ********/
+
+.main-head{
+    background: rgb(39, 45, 53);
+    color: rgb(252, 181, 48);
+    min-height: 10vh;
+    position: sticky;
+    z-index: 0;
+    top: 0px;
+}
+
+
+nav {
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    min-height: 10vh;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+#logo {
+    flex: 1 1 40rem;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+}
+nav ul li a {
+    padding: 1.5rem 1rem;
+}
+nav ul a:hover {
+    background:rgb(68, 78, 92);
+}
+button {
+    padding: 2rem 6rem;
+    cursor: pointer;
+    border: none;
+    background: #126acd;
+    color: white;
+    transition: background 0.1s ease-in-out;
+}
+button:hover {
+    border-radius: 2rem;
+    background: -moz-linear-gradient(90deg, rgba(255,169,6,1) 35%, rgba(0,212,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,169,6,1) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(255,169,6,1) 35%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffa906",endColorstr="#00d4ff",GradientType=1);
+}
+
+/* hero section */
+
+.hero{
+    min-height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.75),transparent),url("./img/christmas.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1rem 1rem 1rem black;
+    text-align: center;
+}
+.hero h3 {
+    padding: 4rem;
+}
+
+
+
+
+
+/* footer section */
+
+footer {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    min-height: 30vh;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgb(39, 45, 53);
+    color: white;
+}
+footer h3, p {
+    text-align: center;
+    padding: 1rem;
+}
+form,.email-form {
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+form label {
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+footer button {
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 2rem;
+    background: #264263;
+    color: white;
+    min-width: auto;
+}
+footer img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.icon {
+    width: 4rem;
+    height: 4rem;
+}
+.wrapper {
+    flex: 1 1 20rem;
+    min-height: 10vh;
+    margin: 2rem 2rem;
+    text-align: left;
+    align-items: left;
+    justify-content: center;
+    background: none;
+    padding: 2rem;
+}
+.wrapper ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.contact ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+.apps ul {
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+
+
+
+
+
+/********* media queries *********/
+
+@media screen and (max-width: 950px ) {
+    html {
+        font-size: 50%;
+    }
+    
+    nav ul a {
+        padding: 0rem 1.2rem;
+    }
+    #logo {
+        padding: 2rem 0rem;
+    }
+}
+
+
+@media screen and (max-width: 747px ) {
+    
+    nav {
+        text-align: center;
+    }
+    
+    
+}
+
+@media screen and (max-width: 400px ) {
+    
+    nav ul a {
+        padding: 0;
+    }
+    
+    
+}
