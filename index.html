@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Homepage - The Ghibli Park</title>
-        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="css/style.css" />
         <!---Title on the tab of Browser--->
     </head>
 
@@ -33,6 +33,114 @@
             </h3>
             <button>Buy Tickets</button>
         </section>
+
+        <!-- Main page content will be placed in main -->
+
+        <!-- The main sliding banner
+        This is the main sliding banner where different sections will be displayed, such as latest news, offers etc.
+        the link to slide to the next banner 
+        the current news banner 
+        current news img link of the park--->
+
+        <main>
+            <section class="main-banner container">
+                <div class="current-news">
+                    <h1>Current News</h1>
+                    <p>Desciption of current news</p>
+                    <img
+                        src="/image/design.jpeg"
+                        alt="Current events"
+                        height="500"
+                        width="900"
+                    />
+
+                    <div class="arrows">
+                        <a href="#"
+                            ><img src="/image/left-arrow.svg" alt="previous"
+                        /></a>
+                        <a href="#"
+                            ><img src="/image/right-arrow.svg" alt="next"
+                        /></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section class="main-attraction">
+      <div class="attractions">
+        <ul class="attraction-images">
+          <li><img src="/image/warehouse.jpeg" alt="" height="200" width="300" /></li>
+          <li><img src="/image/forest.jpeg" alt="" height="200" width="300" /></li>
+          <li><img src="image/witchvalley.jpeg" alt="" height="200" width="300" /></li>
+        </ul>
+      </div>
+    </section> -->
+
+            <!-- attractions is broken up into sections. -->
+            <section class="main-attraction  container">
+                <div class="attractions">
+                    <div class="a1">
+                        <h2>Attraction 1</h2>
+                        <img
+                            src="/image/warehouse.jpeg"
+                            alt=""
+                            height="200"
+                            width="300"
+                        />
+                        <p>Description</p>
+                    </div>
+                    <div class="a2">
+                        <h2>Attraction 2</h2>
+                        <img
+                            src="/image/forest.jpeg"
+                            alt=""
+                            height="200"
+                            width="300"
+                        />
+                        <p>Description</p>
+                    </div>
+                    <div class="a3">
+                        <h2>Attraction 3</h2>
+                        <img
+                            src="image/witchvalley.jpeg"
+                            alt=""
+                            height="200"
+                            width="300"
+                        />
+                        <p>Description</p>
+                    </div>
+                </div>
+            </section>
+
+            <!---hr tags are the section break lines--->
+            <hr />
+
+            <!---category of visitors img link of the park--->
+            <section class="container">
+                <div class="visitors">
+                    <h2>Category of visitors</h2>
+                    <ul class="list-visitors">
+                        <li><a href="#">Ghibli Fans</a></li>
+                        <li><a href="#">Family</a></li>
+                        <li><a href="#">Japanese culture lovers</a></li>
+                        <li><a href="#">Nature lovers</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- This section is used to display the latest offers of the park. -->
+            <section class="container">
+                <div class="offers">
+                    <h1>Offers/Discount</h1>
+                    <p>Information regarding discounts and upcoming offers</p>
+                </div>
+            </section>
+
+            <!-- This section is used to display the apps that are available for the park. -->
+            <section class="container">
+                <h1>Download our Apps</h1>
+                <p>Apps for Android and Apple</p>
+            </section>
+        </main>
 
         <footer class="container">
             <div>
@@ -89,60 +197,6 @@
                     </li>
                 </ul>
             </div>
-
-            <!-- <div class="wrapper">
-                <form action="">
-                    <div class="email-form">
-                        <label for="Email">Your Email</label>
-                        <input type="email" name="Email" required />
-                    </div>
-                    <button>Sign-Up</button>
-                </form>
-            </div>
-            <div class="wrapper contact">
-                <h3>Contact us</h3>
-                <ul>
-                    <ul>
-                        <li><img src="./icons/phone.svg" alt="" /></li>
-                    </ul>
-                    <li>+1(888)-154-7854</li>
-                </ul>
-                <ul>
-                    <ul>
-                        <li><img src="./icons/email.svg" alt="" /></li>
-                    </ul>
-                    <li>team.ghibli@j.com</li>
-                </ul>
-            </div>
-            <div class="wrapper apps">
-                <h3>Download App</h3>
-                <ul class="apps-list">
-                    <li>
-                        <img class="icon" src="./icons/ios.svg" alt="" />
-                    </li>
-                    <li>
-                        <img class="icon" src="./icons/playstore.svg" alt="" />
-                    </li>
-                </ul>
-            </div>
-            <div class="wrapper">
-                <h3>Site Map</h3>
-                <p>list if internal sites</p>
-                <ul>
-                    <li>
-                        <img class="icon" src="./icons/facebook.svg" alt="" />
-                    </li>
-                    <li>
-                        <img class="icon" src="./icons/instagram.svg" alt="" />
-                    </li>
-                    <li>
-                        <img class="icon" src="./icons/youtube.svg" alt="" />
-                    </li>
-                    <li>
-                        <img class="icon" src="./icons/twitter.svg" alt="" />
-                    </li>
-                </ul>
-            </div> -->
         </footer>
     </body>
 </html>
