@@ -1,146 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- The head section of the page. Includes metadata about the website. -->
+    <!-- The head section of the page. Includes metadata about the website. -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Attractions - The Ghibli Park</title>
-  <!---Title on the tab of Browser--->
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
 
-<body>
-  <!-- This is the header section of the page, this includes the navigation bar and the logo. And options to login and change the language -->
-  <header>
-    <p>
-      Covid 19 Notification
-    </p>
-    <a>
-      <img src="/image/logo.png" alt="Park Logo" height="200" width="400">
-      <b>Welcome to Welcome To The Ghibli Park</b>
-    </a>
+        <title>Attractions - The Ghibli Park</title>
+        <!---Title on the tab of Browser--->
+    </head>
 
-    <!-- Main navigation links -->
-    <nav>
-      <a href="/index.html">Home</a>|
-      <a href="/attractions.html">Attractions</a>|
-      <a href="/Info.html">Useful Information</a>|
-      <a href="#">Special Offer</a>
-      <button formaction="#">Buy Tickets</button>
-      <form action="">
-        <label for="search">Search</label>
-        <input id="search" name="search" type="text">
-      </form>
-    </nav>
+    <body>
+        <!-- This is the header section of the page, this includes the navigation bar and the logo. And options to login and change the language -->
+        <header class="main-head">
+            <nav class="container">
+                <h1 id="logo">The Ghibli Park</h1>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/info.html">Info</a></li>
+                    <li><a href="/attractions.html">Attractions</a></li>
+                    <li><a class="buy" href="#">Buy</a></li>
+                    <li><a href="#">Sign-in</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <!-- sign in and language selection -->
-      <a>Language</a>
-      <select>
-        <option>en</option>
-        <option>hi</option>
-        <option>af</option>
-        <option>fr</option>
-        <option>中文</option>
-        <option>日語</option>
-      </select>
+        <!-- Main page content will be placed in main -->
+        <main>
+            <section class="container"> 
+                <h1>Attractions</h1>
 
-    <div class="top-links">
-      <a href="">Sign In</a>
-    </div>
-  </header>
+                <blockquote class="mb-1">
+                    "Ghibli Park has some of the most amazing attractions in the
+                    world" - The ThemePark reviewer.
+                </blockquote>
+            </section>
+            <section class="container">
+                
 
-  <!-- Main page content will be placed in main -->
-  <main>
-    <section>
-      <h2>Attractions</h2>
+                <!-- These buttons will filter the various categories of attractions -->
+                <ul class="tabs-navigation">
+                    <li class="tab-button active">
+                        <img src="image/allrides.jpg" />
+                        <span>All rides</span>
+                    </li>
+                    <li class="tab-button">
+                        <img src="image/shows.jpg" />
+                        <span>Shows</span>
+                    </li>
+                    <li class="tab-button">
+                        <img src="image/natureicon.png" />
+                        <span>Nature</span>
+                    </li>
+                    <li class="tab-button">
+                        <img src="image/exhibitionicon.jpg" />
+                        <span>Exhibitions</span>
+                    </li>
+                    <li class="tab-button">
+                        <img src="image/visualexperience.jpg" />
+                        <span>Visual Experience</span>
+                    </li>
+                </ul>
 
-      <!-- These buttons will filter the various categories of attractions -->
-      <ul class="tabs-navigation">
-        <li class="tab-button">
-          <button>All rides</button>
-        </li>
-        <li class="tab-button">
-          <button>Shows</button>
-        </li>
-        <li class="tab-button">
-          <button>Nature</button>
-        </li>
-        <li class="tab-button">
-          <button>Exhibitions</button>
-        </li>
-        <li class="tab-button">
-          <button>Visual Experience</button>
-        </li>
-      </ul>
+                <!-- The selected attractions will be displayed here -->
+                <div class="tabs-content">
+                    <div class="card">
+                        <img src="image/attraction1.jpg" alt="" />
+                        <h4>Happy Wheel</h4>
+                        <p>Our awesome Ferris Wheel!</p>
+                    </div>
 
-      <!-- The selected attractions will be displayed here -->
-      <div class="tabs-content">
-        <div>
-          <img src="image/attraction1.jpg" alt="" />
-          <h6>Attraction 1</h6>
-        </div>
+                    <div class="card">
+                        <img src="image/attraction2.jpg" alt="" />
+                        <h4>The Anaconda</h4>
+                        <p>Are you brave enough?</p>
+                    </div>
 
-        <div>
-          <img src="image/attraction2.jpg" alt="" />
-          <h6>Attraction 2</h6>
-        </div>
+                    <div class="card">
+                        <img src="image/attraction3.jpg" alt="" />
+                        <h4>The Whirly Bird</h4>
+                        <p>Take a pleasant and dizzying spin!</p>
+                    </div>
 
-        <div>
-          <img src="image/attraction3.jpg" alt="" />
-          <h6>Attraction 3</h6>
-        </div>
-      </div>
-    </section>
-  </main>
+                    <div class="card">
+                        <img src="image/attractionnature1.jpg" alt="" />
+                        <h4>Green Escapes</h4>
+                        <p>Immerse yourself in mother nature.</p>
+                    </div>
 
-  <hr />
+                    <div class="card">
+                        <img src="image/attractionnature2.jpg" alt="" />
+                        <h4>Welcome to the Jungle</h4>
+                        <p>Experience the jungle like never before!</p>
+                    </div>
 
-  <!-- This is the footer section of the page, this includes the copyright and the contact information -->
-  <footer>
-    <!-- This will be the chat box for the website so that users can talk to an agent for help. -->
-    <div>
-      <img src="image/chat-icon.png" alt="Chat with us." width="60">
-    </div>
-    
-    <div>
-      <form action="#">
-        <!-- replace "#" by submission page  -->
-        <label for="email">Get Latest News:</label>
-        <input type="email" id="email" placeholder="Email">
-        <input type="submit" value="SUBSCRIBE">
-      </form>
-    </div>
+                    <div class="card">
+                        <img src="image/attractionnature3.jpg" alt="" />
+                        <h4>The Foefie Slide</h4>
+                        <p>Hold on for dear life!</p>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-    <div>
-      <h2>Contact us</h2>
-      <img src="image/phone.svg" atl="phone icon" height="30" width="30">
-      <a>(+81) xx xxx xxx</a><br>
-      <img src="image/mail.svg" atl="mail icon" height="30" width="30">
-      <a>contact@ghibli.com</a><br>
-    </div>
+        <hr />
 
-    <div>
-      <h3>Sitemap</h3>
-      <a href="#">List of Internal Website</a>
-      <br><br>
-      <a href="https://facebook.com"><img src="image/facebook.svg" atl="facebook icon" height="30" width="30"></a>
-      <a href="https://twitter.com"><img src="image/twitter.svg" atl="twitter icon" height="30" width="30"></a>
-      <a href="https://instagram.com"><img src="image/ins.svg" atl="instagram icon" height="30" width="30"></a>
-      <a href="https://youtube.com"><img src="image/youtube.svg" atl="youtube icon" height="30" width="30"></a>
-    </div>
+        <footer class="container">
+            <div>
+                <h5 class="text-left">Newsletter</h5>
 
-    <div>
-      <h3>Download App</h3>
-      <a href="https://www.apple.com/app-store"><img src="image/appstore.png" atl="appstore icon" height="30"
-          width="90"></a>
-      <a href="https://play.google.com"><img src="image/playstore.png" atl="playstore icon" height="30" width="90"></a>
-    </div>
+                <form action="">
+                    <input
+                        type="email"
+                        name="Email"
+                        placeholder="email"
+                        required
+                    />
+                    <button>Sign-Up</button>
+                </form>
+            </div>
+            <div class="contact">
+                <h5>Contact Us</h5>
+                <div class="contact-item">
+                    <img src="./icons/phone.svg" alt="" />
+                    +1(888)-154-7854
+                </div>
+                <div class="contact-item">
+                    <img src="./icons/email.svg" alt="" />
+                    team.ghibli@j.com
+                </div>
+            </div>
 
-    <p>Copyright © 2021 Ghibli Park. All rights reserved.</p>
-    <a href="">Policies and restricions</a>
+            <div>
+                <h5>Follow Us</h5>
+                <ul class="icon-list">
+                    <li>
+                        <img class="icon" src="./icons/facebook.svg" alt="" />
+                    </li>
+                    <li>
+                        <img class="icon" src="./icons/instagram.svg" alt="" />
+                    </li>
+                    <li>
+                        <img class="icon" src="./icons/youtube.svg" alt="" />
+                    </li>
+                    <li>
+                        <img class="icon" src="./icons/twitter.svg" alt="" />
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Download Apps</h5>
 
-  </footer>
-</body>
-
+                <ul class="icon-list">
+                    <li>
+                        <img class="icon" src="./icons/ios.svg" alt="" />
+                    </li>
+                    <li>
+                        <img class="icon" src="./icons/playstore.svg" alt="" />
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
 </html>
