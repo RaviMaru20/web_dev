@@ -327,6 +327,41 @@ footer img {
     font-weight: 300;
 }
 
+.visitors{
+    background-color: rgb(39, 45, 53);
+    color: #fff;
+}
+
+.visitors h1{
+    color: #FFF;
+}
+
+
+.list-visitors a {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.list-visitors {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    font-weight: 300;
+}
+
+.list-visitors li {
+    flex: 1 1 0;
+    border: 1px solid;
+    margin-right: 2rem;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+
+.list-visitors li:last-child {
+    margin-right: 0;
+}
+
 /* Styles for attractions page */
 
 .home-attractions{
@@ -473,6 +508,11 @@ footer img {
     margin: 0;
 }
 
+hr{
+    border: 0;
+    border-top: 1px solid #d1d1d1;
+    margin: 1rem 0 2rem;
+}
 
 @font-face {
     font-family: 'Signika';
