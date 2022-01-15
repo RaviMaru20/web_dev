@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- The head section of the page. Includes metadata about the website. -->
+<!-- The head section of the page. Includes metadata about the website. -->
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Homepage - The Ghibli Park</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <!---Title on the tab of Browser--->
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage - The Ghibli Park</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!---Title on the tab of Browser--->
+</head>
 
-    <body>
-        <header class="main-head">
-            <nav class="container">
-                <h1 id="logo">The Ghibli Park</h1>
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/info.html">Info</a></li>
-                    <li><a href="/attractions.html">Attractions</a></li>
-                    <li><a class="buy" href="#">Buy</a></li>
-                    <li><a href="#">Sign-in</a></li>
-                </ul>
-            </nav>
-        </header>
+<body>
+    <header class="main-head">
+        <nav class="container">
+            <h1 id="logo">The Ghibli Park</h1>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/info.html">Info</a></li>
+                <li><a href="/attractions.html">Attractions</a></li>
+                <li><a class="buy" href="#">Buy</a></li>
+                <li><a href="#">Sign-in</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <section class="hero">
+    <!-- <section class="hero">
             <h2>Current News</h2>
             <h3>
                 Explore special Events<br />
                 Its Christmas
             </h3>
             <button>Buy Tickets</button>
-        </section>
+        </section> -->
 
-        <!-- Main page content will be placed in main -->
+    <!-- Main page content will be placed in main -->
 
-        <!-- The main sliding banner
+    <!-- The main sliding banner
         This is the main sliding banner where different sections will be displayed, such as latest news, offers etc.
         the link to slide to the next banner 
         the current news banner 
         current news img link of the park--->
 
-        <main>
-            <section class="main-banner container">
+    <main>
+        <!-- <section class="main-banner container">
                 <div class="current-news">
                     <h1>Current News</h1>
                     <p>Desciption of current news</p>
@@ -63,9 +63,9 @@
                         /></a>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
-            <!-- <section class="main-attraction">
+        <!-- <section class="main-attraction">
       <div class="attractions">
         <ul class="attraction-images">
           <li><img src="/image/warehouse.jpeg" alt="" height="200" width="300" /></li>
@@ -75,128 +75,142 @@
       </div>
     </section> -->
 
-            <!-- attractions is broken up into sections. -->
-            <section class="main-attraction  container">
-                <div class="attractions">
-                    <div class="a1">
-                        <h2>Attraction 1</h2>
-                        <img
-                            src="/image/warehouse.jpeg"
-                            alt=""
-                            height="200"
-                            width="300"
-                        />
-                        <p>Description</p>
-                    </div>
-                    <div class="a2">
-                        <h2>Attraction 2</h2>
-                        <img
-                            src="/image/forest.jpeg"
-                            alt=""
-                            height="200"
-                            width="300"
-                        />
-                        <p>Description</p>
-                    </div>
-                    <div class="a3">
-                        <h2>Attraction 3</h2>
-                        <img
-                            src="image/witchvalley.jpeg"
-                            alt=""
-                            height="200"
-                            width="300"
-                        />
-                        <p>Description</p>
-                    </div>
+        <!-- attractions is broken up into sections. -->
+        <section class="main-attraction  container">
+            <h1>Our Attractions</h1>
+            <hr>
+            <div class="home-attractions">
+                <div class="attraction-card">
+                    <figure>
+                        <img src="/image/mononoke.png" alt="" />
+                        <figcaption>
+                            <p> Set in the Muromachi era, the village of Ashitaka’s clan reveals the beauty of
+                                their ancient arts and craftmanship. The alliance between humans and nature will
+                                astonish you! Continue your journey to the iron city of Tatara-ba, where Princess
+                                Mononoke will fight the protect the valley.
+                            </p>
+                            <button>Learn more</button>
+                        </figcaption>
+                    </figure>
+
+                    <h2>Mononoke’s Village</h2>
                 </div>
-            </section>
-
-            <!---hr tags are the section break lines--->
-            <hr />
-
-            <!---category of visitors img link of the park--->
-            <section class="container">
-                <div class="visitors">
-                    <h2>Category of visitors</h2>
-                    <ul class="list-visitors">
-                        <li><a href="#">Ghibli Fans</a></li>
-                        <li><a href="#">Family</a></li>
-                        <li><a href="#">Japanese culture lovers</a></li>
-                        <li><a href="#">Nature lovers</a></li>
-                    </ul>
+                <div class="attraction-card">
+                    <figure>
+                        <img src="/image/forest.jpeg" alt="" />
+                        <figcaption>
+                            <p>Discover the charm of nature, and the quaint atmosphere of the house of Mei and
+                                Satsuko. After a tour in the nearby village, you can venture yourself into the
+                                forest. If you are getting close to the bus stop near Mei and Satsuko’s house, you
+                                may encounter Totoro!</p>
+                            <button>Learn more</button>
+                        </figcaption>
+                    </figure>
+                    <h2>Dondoko Forest area</h2>
                 </div>
-            </section>
-
-            <!-- This section is used to display the latest offers of the park. -->
-            <section class="container">
-                <div class="offers">
-                    <h1>Offers/Discount</h1>
-                    <p>Information regarding discounts and upcoming offers</p>
-                </div>
-            </section>
-
-            <!-- This section is used to display the apps that are available for the park. -->
-            <section class="container">
-                <h1>Download our Apps</h1>
-                <p>Apps for Android and Apple</p>
-            </section>
-        </main>
-
-        <footer class="container">
-            <div>
-                <h5 class="text-left">Newsletter</h5>
-
-                <form action="">
-                    <input
-                        type="email"
-                        name="Email"
-                        placeholder="email"
-                        required
-                    />
-                    <button>Sign-Up</button>
-                </form>
-            </div>
-            <div class="contact">
-                <h5>Contact Us</h5>
-                <div class="contact-item">
-                    <img src="./icons/phone.svg" alt="" />
-                    +1(888)-154-7854
-                </div>
-                <div class="contact-item">
-                    <img src="./icons/email.svg" alt="" />
-                    team.ghibli@j.com
+                <div class="attraction-card">
+                    <figure>
+                        <img src="image/witches-valley.png" alt="" />
+                        <figcaption>
+                            <p>Take a broomstick and fly alongside Kiki to deliver letters in the colorful city of
+                                Koriko. You can visit her home and greet her cat Jiji. Take a stroll to visit Howl’s
+                                moving castle, and embrace the magic of the place with Sophie!</p>
+                            <button>Learn more</button>
+                        </figcaption>
+                    </figure>
+                    <h2>Witches’ Valley</h2>
                 </div>
             </div>
+        </section>
 
-            <div>
-                <h5>Follow Us</h5>
-                <ul class="icon-list">
-                    <li>
-                        <a href="https://www.facebook.com/"><img class="icon" src="./icons/facebook.svg" alt="access to Ghibli Park Facebook"/></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/"><img class="icon" src="./icons/instagram.svg" alt="access to Ghibli Park Instagram"/></a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/"><img class="icon" src="./icons/youtube.svg" alt="acces to Ghibli Park Youtube"/></a>
-                    </li>
-                    <li>
-                        <a href="https://www.twitter.com/"><img class="icon" src="./icons/twitter.svg" alt="acces to Ghibli Park Twitter" /></a>
-                    </li>
+        <!---hr tags are the section break lines--->
+        <hr />
+
+        <!---category of visitors img link of the park--->
+        <section class="container">
+            <div class="visitors">
+                <h2>Category of visitors</h2>
+                <ul class="list-visitors">
+                    <li><a href="#">Ghibli Fans</a></li>
+                    <li><a href="#">Family</a></li>
+                    <li><a href="#">Japanese culture lovers</a></li>
+                    <li><a href="#">Nature lovers</a></li>
                 </ul>
             </div>
-            <div>
-                <h5>Download Apps</h5>
+        </section>
 
-                <ul class="icon-list">
-                    <li>
-                        <a href="https://www.apple.com/fr/store/"><img class="icon" src="./icons/ios.svg" alt="access to Ghibli Park ios app" /></a>
-                    </li>
-                    <li>
-                        <a href="https://play.google.com/store/"><img class="icon" src="./icons/playstore.svg" alt="access to Ghibli Park playstore app" /></a>
-                    </li>
-                </ul>
+        <!-- This section is used to display the latest offers of the park. -->
+        <section class="container">
+            <div class="offers">
+                <h1>Offers/Discount</h1>
+                <p>Information regarding discounts and upcoming offers</p>
             </div>
-        </footer>
-    </body>
+        </section>
+
+        <!-- This section is used to display the apps that are available for the park. -->
+        <section class="container">
+            <h1>Download our Apps</h1>
+            <p>Apps for Android and Apple</p>
+        </section>
+    </main>
+
+    <footer class="container">
+        <div>
+            <h5 class="text-left">Newsletter</h5>
+
+            <form action="">
+                <input type="email" name="Email" placeholder="email" required />
+                <button>Sign-Up</button>
+            </form>
+        </div>
+        <div class="contact">
+            <h5>Contact Us</h5>
+            <div class="contact-item">
+                <img src="./icons/phone.svg" alt="" />
+                +1(888)-154-7854
+            </div>
+            <div class="contact-item">
+                <img src="./icons/email.svg" alt="" />
+                team.ghibli@j.com
+            </div>
+        </div>
+
+        <div>
+            <h5>Follow Us</h5>
+            <ul class="icon-list">
+                <li>
+                    <a href="https://www.facebook.com/"><img class="icon" src="./icons/facebook.svg"
+                            alt="access to Ghibli Park Facebook" /></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/"><img class="icon" src="./icons/instagram.svg"
+                            alt="access to Ghibli Park Instagram" /></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/"><img class="icon" src="./icons/youtube.svg"
+                            alt="acces to Ghibli Park Youtube" /></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/"><img class="icon" src="./icons/twitter.svg"
+                            alt="acces to Ghibli Park Twitter" /></a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h5>Download Apps</h5>
+
+            <ul class="icon-list">
+                <li>
+                    <a href="https://www.apple.com/fr/store/"><img class="icon" src="./icons/ios.svg"
+                            alt="access to Ghibli Park ios app" /></a>
+                </li>
+                <li>
+                    <a href="https://play.google.com/store/"><img class="icon" src="./icons/playstore.svg"
+                            alt="access to Ghibli Park playstore app" /></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
 </html>
