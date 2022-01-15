@@ -70,7 +70,7 @@ button {
     font-size: 1rem;
 }
 
-/* Container styles, this adds margin to thye left and right of the content and centers input */
+/* Container styles, this adds margin to the left and right of the content and centers input */
 .container {
     max-width: 1600px;
     margin: 0 auto;
@@ -219,7 +219,6 @@ footer button {
 footer h3,
 p {
     text-align: center;
-    padding: 1rem;
 }
 
 .icon-list {
@@ -312,6 +311,22 @@ footer img {
     }
 }
 
+
+/* Home page styles */
+.news-content{
+    display: flex;
+}
+
+.news-content > *{
+    flex: 1 1 0;
+}
+
+.news-content p{
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
 /* Styles for attractions page */
 
 .home-attractions{
@@ -330,8 +345,8 @@ footer img {
     background: rgba(255,255,255,0);
     overflow: none;
     text-align: center;
-    
 }
+
 .attraction-card figure{
     height: 100%;
     margin-bottom: 1rem;
