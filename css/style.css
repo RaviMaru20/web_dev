@@ -72,7 +72,7 @@ button {
 
 /* Container styles, this adds margin to the left and right of the content and centers input */
 .container {
-    max-width: 1600px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 1rem 2rem;
 }
@@ -312,6 +312,7 @@ footer img {
 }
 
 
+
 /* Home page styles */
 .news-content{
     display: flex;
@@ -356,8 +357,19 @@ footer img {
     margin-right: 2rem;
     border-radius: 1rem;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.list-visitors hr {
+    width: 50%;
+}
+
+.list-visitors img {
+    width: 25%;
+    margin-bottom: 1rem;
+}
 
 .list-visitors li:last-child {
     margin-right: 0;
@@ -403,7 +415,39 @@ footer img {
     max-width: 60%;
     position: relative;
     top: -13rem;
+    margin-bottom: -13rem;
 }
+
+/* Styles for info page*/
+
+.page-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.page-heading h1{
+    color: #FFF;
+    text-shadow: 1px 1px 1px black;
+}
+
+.info-heading{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url(../image/witchvalley.jpeg);
+    background-size: cover;
+    height: 250px;
+}
+
+.info-section{
+    display: flex;
+}
+
+
+.info-section > *{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
 /* Styles for attractions page */
 
 .home-attractions{

@@ -1,157 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- The head section of the page. Includes metadata about the website. -->
+<!-- The head section of the page. Includes metadata about the website. -->
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/style.css" />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
 
-        <title>Attractions - The Ghibli Park</title>
-        <!---Title on the tab of Browser--->
-    </head>
+    <title>Attractions - The Ghibli Park</title>
+    <!---Title on the tab of Browser--->
+</head>
 
-    <body>
-        <!-- This is the header section of the page, this includes the navigation bar and the logo. And options to login and change the language -->
-        <header class="main-head">
-            <nav class="container">
-                <h1 id="logo">The Ghibli Park</h1>
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/info.html">Info</a></li>
-                    <li><a href="/attractions.html">Attractions</a></li>
-                    <li><a class="buy" href="#">Buy</a></li>
-                    <li><a href="#">Sign-in</a></li>
-                </ul>
-            </nav>
-        </header>
+<body>
+    <!-- This is the header section of the page, this includes the navigation bar and the logo. And options to login and change the language -->
+    <header class="main-head">
+        <nav class="container">
+            <h1 id="logo">The Ghibli Park</h1>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/info.html">Info</a></li>
+                <li><a href="/attractions.html">Attractions</a></li>
+                <li><a class="buy" href="#">Buy</a></li>
+                <li><a href="#">Sign-in</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- Main page content will be placed in main -->
-        <main>
-            <section class="container">
-                <!-- This section details the information about the park, such as location, weather and ticket sales. -->
-                <h2>Useful Information</h2>
-                <ol>
-                    <li>
-                        <h3>How to get there</h3>
-                    </li>
-                    <img
-                        src="/image/map.png"
-                        alt="map"
-                        height="200"
-                        width="400"
-                    />
-                    <li>
-                        <h3>Weather Forecast</h3>
-                    </li>
-                    <img
-                        src="/image/weather.gif"
-                        alt="weather"
-                        height="250"
-                        width="400"
-                    />
-                    <li>
-                        <h3>Date and Time Availability</h3>
-                    </li>
-                    <img
-                        src="/image/date.png"
-                        alt="date"
-                        height="300"
-                        width="400"
-                    />
-                    <li>
-                        <h3>Where to buy ticket</h3>
-                    </li>
-                    <img
-                        src="/image/ghibli.jpeg"
-                        alt="tickets"
-                        height="300"
-                        width="300"
-                    />
-                    <li>
-                        <h3>Safety and Requirement</h3>
-                    </li>
-                    <a
-                        >Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam,Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam [Placeholder]
-                    </a>
-                    <li>
-                        <h3>Policies and Restrictions</h3>
-                    </li>
-                    <a
-                        >Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam,Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam [Placeholder]
-                    </a>
-                </ol>
-            </section>
-        </main>
+    <!-- Main page content will be placed in main -->
+    <main>
+        <section class="page-heading info-heading">
+            <h1>Park Information</h1>
+        </section>
+        <!-- Booking tickets section -->
+        <section class="container info-section">
+            <article>
+                <h1>Booking tickets</h1>
+            </article>
+            <aside>
+                Booking tickets form goes here
+            </aside>
+        </section>
+        <!-- Park Hours section -->
+        <section class="container info-section">
 
-        <hr />
+            <aside>
+                Park hours image
+            </aside>
+            <article>
+                <h1>Park hours</h1>
+            </article>
+        </section>
 
-        <footer class="container">
+        <!-- Pricing section -->
+        <section class="container info-section">
             <div>
-                <h5 class="text-left">Newsletter</h5>
-
-                <form action="">
-                    <input
-                        type="email"
-                        name="Email"
-                        placeholder="email"
-                        required
-                    />
-                    <button>Sign-Up</button>
-                </form>
+                <h1>Pricing</h1>
             </div>
-            <div class="contact">
-                <h5>Contact Us</h5>
-                <div class="contact-item">
-                    <img src="./icons/phone.svg" alt="" />
-                    +1(888)-154-7854
-                </div>
-                <div class="contact-item">
-                    <img src="./icons/email.svg" alt="" />
-                    team.ghibli@j.com
-                </div>
-            </div>
+        </section>
 
+        <!-- Directions -->
+        <section class="container info-section">
             <div>
-                <h5>Follow Us</h5>
-                <ul class="icon-list">
-                    <li>
-                        <a href="https://www.facebook.com/"><img class="icon" src="./icons/facebook.svg" alt="access to Ghibli Park Facebook"/></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/"><img class="icon" src="./icons/instagram.svg" alt="access to Ghibli Park Instagram"/></a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/"><img class="icon" src="./icons/youtube.svg" alt="acces to Ghibli Park Youtube"/></a>
-                    </li>
-                    <li>
-                        <a href="https://www.twitter.com/"><img class="icon" src="./icons/twitter.svg" alt="acces to Ghibli Park Twitter" /></a>
-                    </li>
-                </ul>
+                <h1>Directions</h1>
             </div>
-            <div>
-                <h5>Download Apps</h5>
+        </section>
 
-                <ul class="icon-list">
-                    <li>
-                        <a href="https://www.apple.com/fr/store/"><img class="icon" src="./icons/ios.svg" alt="access to Ghibli Park ios app" /></a>
-                    </li>
-                    <li>
-                        <a href="https://play.google.com/store/"><img class="icon" src="./icons/playstore.svg" alt="access to Ghibli Park playstore app" /></a>
-                    </li>
-                </ul>
+        <!-- FAQ Section -->
+        <section class="container info-section">
+            <div>
+                <h1>FAQ</h1>
             </div>
-        </footer>
-    </body>
+        </section>
+
+        <section class="container">
+            <!-- This section details the information about the park, such as location, weather and ticket sales. -->
+            <h2>Useful Information</h2>
+            <ol>
+                <li>
+                    <h3>How to get there</h3>
+                </li>
+                <img src="/image/map.png" alt="map" height="200" width="400" />
+                <li>
+                    <h3>Weather Forecast</h3>
+                </li>
+                <img src="/image/weather.gif" alt="weather" height="250" width="400" />
+                <li>
+                    <h3>Date and Time Availability</h3>
+                </li>
+                <img src="/image/date.png" alt="date" height="300" width="400" />
+                <li>
+                    <h3>Where to buy ticket</h3>
+                </li>
+                <img src="/image/ghibli.jpeg" alt="tickets" height="300" width="300" />
+                <li>
+                    <h3>Safety and Requirement</h3>
+                </li>
+                <a>Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam,Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam [Placeholder]
+                </a>
+                <li>
+                    <h3>Policies and Restrictions</h3>
+                </li>
+                <a>Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam,Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam [Placeholder]
+                </a>
+            </ol>
+        </section>
+    </main>
+
+    <hr />
+
+    <footer class="container">
+        <div>
+            <h5 class="text-left">Newsletter</h5>
+
+            <form action="">
+                <input type="email" name="Email" placeholder="email" required />
+                <button>Sign-Up</button>
+            </form>
+        </div>
+        <div class="contact">
+            <h5>Contact Us</h5>
+            <div class="contact-item">
+                <img src="./icons/phone.svg" alt="" />
+                +1(888)-154-7854
+            </div>
+            <div class="contact-item">
+                <img src="./icons/email.svg" alt="" />
+                team.ghibli@j.com
+            </div>
+        </div>
+
+        <div>
+            <h5>Follow Us</h5>
+            <ul class="icon-list">
+                <li>
+                    <a href="https://www.facebook.com/"><img class="icon" src="./icons/facebook.svg"
+                            alt="access to Ghibli Park Facebook" /></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/"><img class="icon" src="./icons/instagram.svg"
+                            alt="access to Ghibli Park Instagram" /></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/"><img class="icon" src="./icons/youtube.svg"
+                            alt="acces to Ghibli Park Youtube" /></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/"><img class="icon" src="./icons/twitter.svg"
+                            alt="acces to Ghibli Park Twitter" /></a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h5>Download Apps</h5>
+
+            <ul class="icon-list">
+                <li>
+                    <a href="https://www.apple.com/fr/store/"><img class="icon" src="./icons/ios.svg"
+                            alt="access to Ghibli Park ios app" /></a>
+                </li>
+                <li>
+                    <a href="https://play.google.com/store/"><img class="icon" src="./icons/playstore.svg"
+                            alt="access to Ghibli Park playstore app" /></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
 </html>
