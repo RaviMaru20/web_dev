@@ -15,43 +15,29 @@ body {
 }
 
 h1 {
-    font-size: 3.5rem;
-    font-family: Signika;
-    font-weight: lighter;
-    color: #000;
-
+    font-size: 2.6rem;
 }
 h2 {
-    font-size: 2rem;
-    font-weight: 300;
+    font-size: 2.8rem;
+    
 }
 h3 {
-    font-size: 1.75rem;
+    font-size: 2.8rem;
     font-weight: normal;
 }
 h4 {
+    font-size: 2.4rem;
+}
+p,h5 {
     font-size: 1.5rem;
-}
-h5 {
-    font-size: 1.25rem;
-}
-h6 {
-    font-size: 1rem;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin-bottom: 1rem;
-}
-p {
-    font-size: 1rem;
 }
 a {
     color: white;
     text-decoration: none;
+    
+}
+li, button {
+    font-size: 2rem;
 }
 
 .text-left {
@@ -67,7 +53,7 @@ blockquote {
 
 li,
 button {
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 /* Container styles, this adds margin to the left and right of the content and centers input */
@@ -87,44 +73,47 @@ section {
 
 /******* nav section ********/
 
-.main-head {
+.main-head{
     background: rgb(39, 45, 53);
     color: rgb(252, 181, 48);
     min-height: 10vh;
     position: sticky;
-    z-index: 0;
+    z-index: 1;
+    top: 0px;
 }
+
 
 nav {
     display: flex;
+    padding: 2rem;
+    width: 90%;
+    min-height: 10vh;
     margin: auto;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 #logo {
+    flex: 1 1 40rem;
     text-decoration: underline;
     text-decoration-color: white;
-    font-size: 2.5rem;
-    color: rgb(252, 181, 48);
 }
 nav ul {
     list-style: none;
     display: flex;
     flex: 1 1 40rem;
-    justify-content: end;
-    text-align: center;
-}
-nav ul li {
-    min-width: 100px;
-    display: flex;
+    justify-content: space-evenly;
 }
 nav ul li a {
     padding: 1.5rem 1rem;
-    border-radius: 2rem;
-    width: 100%;
 }
-nav ul a:hover {
-    background: rgb(68, 78, 92);
+nav ul li  {
+    padding: 1.5rem 1rem;
+}
+
+nav ul li:hover {
+    background:rgb(68, 78, 92);
+    border-radius: 1rem;
 }
 button {
     padding: 1rem 2rem;
@@ -185,22 +174,49 @@ button:hover {
 /* footer section */
 
 footer {
+    width: 100%;
+    margin: auto;
     display: flex;
+    min-height: 30vh;
+    align-items: center;
     flex-wrap: wrap;
+    background: rgb(39, 45, 53);
     color: white;
-    text-align: center;
-    padding: 2rem;
 }
-footer > * {
+/* footer > * {
     flex: 1;
     display: flex;
     flex-direction: column;
     margin: 1rem;
     align-items: flex-start;
+} */
+.wrapper {
+    flex: 1 1 20rem;
+    min-height: 10vh;
+    margin: 2rem 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    padding: 2rem;
 }
+.wrapper ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+footer .contact, .follow {
+    text-align: center;
+}
+.follow {
+    padding: 2rem;
+}
+
 footer h5 {
     margin-bottom: 1.5rem;
+    text-align: center;
 }
+
 footer input {
     font-size: 1rem;
     padding: 1rem;
@@ -286,9 +302,9 @@ footer img {
 
 /********* media queries *********/
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1493px) {
     html {
-        font-size: 50%;
+        font-size: 80%;
     }
 
     nav ul a {
@@ -299,24 +315,32 @@ footer img {
     }
 }
 
-@media screen and (max-width: 747px) {
+@media screen and (max-width: 1193px) {
     nav {
         text-align: center;
     }
 }
 
-@media screen and (max-width: 400px) {
-    nav ul a {
-        padding: 0;
-    }
-}
 
 
 /* Home page styles */
+.current-news{
+    display: flex;
+    flex-wrap: wrap;
+}
+.image{
+    min-height: 40vh;
+    background: url('/image/design.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .news-content{
     display: flex;
 }
-
+.news-content p{
+    padding: 2rem 0rem;
+}
 .news-content > *{
     flex: 1 1 0;
 }
@@ -326,7 +350,9 @@ footer img {
     font-size: 1.5rem;
     font-weight: 300;
 }
-
+.visitors h4{
+    padding: 2rem;
+}
 .visitors{
     background-color: rgb(39, 45, 53);
     color: #fff;
@@ -351,11 +377,14 @@ footer img {
 }
 
 .list-visitors li {
+    
     flex: 1 1 0;
     border: 1px solid;
     margin-right: 2rem;
     border-radius: 1rem;
     padding: 2rem;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 
