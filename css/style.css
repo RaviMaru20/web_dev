@@ -77,46 +77,62 @@ section {
 
 .main-head{
     background: rgb(39, 45, 53);
-    color: rgb(252, 181, 48);
-    min-height: 10vh;
     position: sticky;
-    z-index: 1;
     top: 0px;
 }
-
-
 nav {
     display: flex;
-    padding: 2rem;
-    width: 90%;
-    min-height: 10vh;
+    justify-content: space-around;
     margin: auto;
     align-items: center;
-    flex-wrap: wrap;
-    
+    text-align: center;
 }
-#logo {
-    flex: 1 1 40rem;
-    text-decoration: underline;
-    text-decoration-color: white;
+nav img{
+    height:50px;
 }
-nav ul {
+
+nav ul { 
     list-style: none;
-    display: flex;
-    flex: 1 1 40rem;
-    justify-content: space-evenly;
+    width:100%;
+    margin-left: 0;
 }
+
 nav ul li a {
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem;
 }
+
 nav ul li  {
-    padding: 1.5rem 1rem;
+    display:inline-block;
+    padding: 2rem 1rem;
 }
 
 nav ul li:hover {
     background:rgb(68, 78, 92);
     border-radius: 1rem;
 }
+nav svg{
+    width:35px;
+    fill:white;
+}
+nav svg:hover{
+    fill:rgb(121, 120, 120);
+}
+.menu{
+    display:none;
+}
+.menu-line{
+    width:25px;
+    height:3px;
+    background-color: white;
+    margin-bottom:5px;
+}
+.menu:hover .menu-line{
+     
+    background-color:rgb(121, 120, 120);
+    
+}
+
+
 button {
     padding: 1rem 2rem;
     cursor: pointer;
@@ -311,17 +327,38 @@ footer img {
     nav ul a {
         padding: 0rem 1.2rem;
     }
-    #logo {
-        padding: 2rem 0rem;
-    }
+
 }
 
-@media screen and (max-width: 1193px) {
+/* @media screen and (max-width: 1193px) {
     nav {
         text-align: center;
     }
-}
+} */
 
+@media screen and (max-width: 870px) {
+    nav{
+        flex-direction: column;
+    }
+    
+    nav ul li{
+        display: block;
+        text-align: center;
+    }
+    nav svg{
+        position: fixed;
+        top:10px;
+        left: 10px;
+    }
+
+    .menu{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top:20px;
+    }
+
+}
 
 
 
