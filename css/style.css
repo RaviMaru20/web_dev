@@ -28,9 +28,11 @@ h3 {
 h4 {
     font-size: 2.4rem;
 }
-p,h5 {
-    font-size: 1.5rem;
-}
+
+p {
+    font-size: 1rem;
+    margin: 0.75rem 0;
+
 a {
     color: white;
     text-decoration: none;
@@ -58,7 +60,7 @@ button {
 
 /* Container styles, this adds margin to the left and right of the content and centers input */
 .container {
-    max-width: 1600px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 1rem 2rem;
 }
@@ -232,8 +234,7 @@ footer button {
     border-radius: 0.5rem;
     margin-bottom: 1rem;
 }
-footer h3,
-p {
+footer h3 {
     text-align: center;
 }
 
@@ -323,6 +324,7 @@ footer img {
 
 
 
+
 /* Home page styles */
 .current-news{
     display: flex;
@@ -383,10 +385,24 @@ footer img {
     margin-right: 2rem;
     border-radius: 1rem;
     padding: 2rem;
-    flex-wrap: wrap;
+    display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
+.list-visitors hr {
+    width: 50%;
+}
+
+.list-visitors img {
+    width: 25%;
+    margin-bottom: 1rem;
+}
+
+
+.list-visitors img:hover{
+    filter: hue-rotate(135deg)
+}
 
 .list-visitors li:last-child {
     margin-right: 0;
@@ -410,10 +426,13 @@ footer img {
     margin-bottom: 2.5rem;
 }
 
-.app-container .app-text ul
+ol > li
 {
-    list-style-position: inside;
+    margin-bottom: 1rem;
+}
 
+ul, ol{
+    margin-left: 2rem;
 }
 
 .app-container .app-text ul li
@@ -432,7 +451,65 @@ footer img {
     max-width: 60%;
     position: relative;
     top: -13rem;
+    margin-bottom: -13rem;
 }
+
+/* Styles for info page*/
+
+.page-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.page-heading h1{
+    color: #FFF;
+    text-shadow: 1px 1px 1px black;
+}
+
+.info-heading{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url(../image/witchvalley.jpeg);
+    background-size: cover;
+    height: 250px;
+}
+
+.info-section{
+    display: flex;
+    align-items: end;
+}
+
+
+.info-section > *{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+
+/* Booking form styles on info page */
+.booking-form{
+    border: 1px solid #999;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.booking-form label{
+    padding: 0;
+    font-size: 0.8rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.booking-form input, select{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    border: 1px solid #999;
+    border-radius: 0.6rem;
+    padding: 0.35rem 1rem;
+}
+
 /* Styles for attractions page */
 
 .home-attractions{
