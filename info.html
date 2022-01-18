@@ -109,7 +109,28 @@
                 </ol>
             </article>
             <aside>
-                Booking tickets form goes here
+                <form action="" class="booking-form">
+                    <h4>Booking form</h1>
+                   
+                        <label for="date">Date of arrival:</label>
+                        <input type="date" name="date" id="date" />
+                   
+                        <label for="time">Time of arrival:</label>
+                        <input type="time" name="time" id="time" />
+
+                        <label for="number">Number of tickets:</label>
+                        <input type="number" name="number" id="number" />
+
+                        <label for="type">Type of tickets:</label>
+                        <select name="type" id="type">
+                            <option value="adult">Adult</option>
+                            <option value="child">Child</option>
+                            <option value="senior">Senior</option>
+                        </select>
+                   
+                        <button type="submit" value="Submit" >Book now</button>
+                    
+                </form>
             </aside>
         </section>
         <hr>
