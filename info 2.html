@@ -6,12 +6,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage - The Ghibli Park</title>
     <link rel="stylesheet" href="css/style.css" />
+
+    <title>Attractions - The Ghibli Park</title>
     <!---Title on the tab of Browser--->
 </head>
 
 <body>
+    <!-- This is the header section of the page, this includes the navigation bar and the logo. And options to login and change the language -->
     <header class="main-head">
         <nav class="container">
             <div>
@@ -54,175 +56,193 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <h2>Current News</h2>
-        <h3>
-            Explore special Events<br />
-            Its Christmas
-        </h3>
-        <button>Buy Tickets</button>
-    </section>
-
     <!-- Main page content will be placed in main -->
-
-    <!-- The main sliding banner
-        This is the main sliding banner where different sections will be displayed, such as latest news, offers etc.
-        the link to slide to the next banner 
-        the current news banner 
-        current news img link of the park--->
-
     <main>
-        <section class="main-banner container">
-            <div class="current-news">
-                <h1>Current News</h1>
-                <article class=news-content>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum eligendi earum quos asperiores
-                        id sunt numquam accusamus nihil, incidunt aperiam quaerat velit totam. Architecto impedit
-                        incidunt delectus animi praesentium.</p>
-                        <div class="image">
-                            
-                        </div>
+        <section class="page-heading info-heading">
+            <h1>Park Information</h1>
+        </section>
+        <!-- Booking tickets section -->
+        <section class="container info-section">
+            <article>
+                <h1>Booking tickets</h1>
+                <p>
+                    <strong>
+                        Booking tickets at the Ghibli Park is super easy!
+                    </strong>
+                </p>
+                <p>
+                    <em>Simply follow the steps below:</em>
+                </p>
+                <ol>
+                    <li>
+                        Choose your date and time of arrival.
+                    </li>
+                    <li>
+                        Choose your number and type of tickets. The following tickets types are available:
+                        <ul>
+                            <li>
+                                Adult - $10
+                            </li>
+                            <li>
+                                Child - $5
+                            </li>
+                            <li>
+                                Senior - $7
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>
+                            Choose your booking method.
+                            <em>
+                                The following booking methods are possible:
+                            </em>
+                        </p>
+                        <p>
+
+                        </p>
+                        <ul>
+                            <li>
+                                <h6>Online booking:</h6>
+                                <p>
+                                    You can book tickets online by filling out the <em>form on the right</em>.
+                                </p>
+                            </li>
+                            <li>
+                                <h6>App booking:</h6>
+                                <p>
+                                    <em>
+                                        App users may be elligible for special discounts!
+                                    </em>
+                                </p>
+                                <p>
+                                    Download our apps by searching <em>"The Ghibli Park"</em> in your app store!
+                                </p>
+                                <p>
+
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>
+                                        In-person booking
+                                    </strong>
+                                </p>
+                                <p>
+                                    <em>
+                                        You can book tickets in person by calling the park office.
+                                    </em>
+                                </p>
+                            </li>
+                    </li>
+                </ol>
+            </article>
+            <aside>
+                <form action="" class="booking-form">
+                    <h4>Booking form</h1>
                    
-                </article>
+                        <label for="date">Date of arrival:</label>
+                        <input type="date" name="date" id="date" />
+                   
+                        <label for="time">Time of arrival:</label>
+                        <input type="time" name="time" id="time" />
+
+                        <label for="number">Number of tickets:</label>
+                        <input type="number" name="number" id="number" />
+
+                        <label for="type">Type of tickets:</label>
+                        <select name="type" id="type">
+                            <option value="adult">Adult</option>
+                            <option value="child">Child</option>
+                            <option value="senior">Senior</option>
+                        </select>
+                   
+                        <button type="submit" value="Submit" >Book now</button>
+                    
+                </form>
+            </aside>
+        </section>
+        <hr>
+        <!-- Park Hours section -->
+        <section class="container info-section">
+
+            <aside>
+                Park hours image
+            </aside>
+            <article>
+                <h1>Park hours</h1>
+            </article>
+        </section>
+
+        <!-- Pricing section -->
+        <section class="container info-section">
+            <div>
+                <h1>Pricing</h1>
             </div>
         </section>
 
-        <!-- <section class="main-attraction">
-      <div class="attractions">
-        <ul class="attraction-images">
-          <li><img src="/image/warehouse.jpeg" alt="" height="200" width="300" /></li>
-          <li><img src="/image/forest.jpeg" alt="" height="200" width="300" /></li>
-          <li><img src="image/witchvalley.jpeg" alt="" height="200" width="300" /></li>
-        </ul>
-      </div>
-    </section> -->
-
-        <!-- attractions is broken up into sections. -->
-        <section class="main-attraction  container">
-            <h1>Our Attractions</h1>
-            <hr>
-            <div class="home-attractions">
-                <div class="attraction-card">
-                    <figure>
-                        <img src="/image/mononoke.png" alt="" />
-                        <figcaption>
-                            <p> Set in the Muromachi era, the village of Ashitaka’s clan reveals the beauty of
-                                their ancient arts and craftmanship. The alliance between humans and nature will
-                                astonish you! Continue your journey to the iron city of Tatara-ba, where Princess
-                                Mononoke will fight the protect the valley.
-                            </p>
-                            <button>Learn more</button>
-                        </figcaption>
-                    </figure>
-
-                    <h2>Mononoke’s Village</h2>
-                </div>
-                <div class="attraction-card">
-                    <figure>
-                        <img src="/image/forest.jpeg" alt="" />
-                        <figcaption>
-                            <p>Discover the charm of nature, and the quaint atmosphere of the house of Mei and
-                                Satsuko. After a tour in the nearby village, you can venture yourself into the
-                                forest. If you are getting close to the bus stop near Mei and Satsuko’s house, you
-                                may encounter Totoro!</p>
-                            <button>Learn more</button>
-                        </figcaption>
-                    </figure>
-                    <h2>Dondoko Forest area</h2>
-                </div>
-                <div class="attraction-card">
-                    <figure>
-                        <img src="image/witches-valley.png" alt="" />
-                        <figcaption>
-                            <p>Take a broomstick and fly alongside Kiki to deliver letters in the colorful city of
-                                Koriko. You can visit her home and greet her cat Jiji. Take a stroll to visit Howl’s
-                                moving castle, and embrace the magic of the place with Sophie!</p>
-                            <button>Learn more</button>
-                        </figcaption>
-                    </figure>
-                    <h2>Witches’ Valley</h2>
-                </div>
+        <!-- Directions -->
+        <section class="container info-section">
+            <div>
+                <h1>Directions</h1>
             </div>
         </section>
 
-        <!---hr tags are the section break lines--->
-
-        <!---category of visitors img link of the park--->
-        <section class="visitors">
-            <div class=" container">
-                <h1>Category of visitors</h1>
-                <hr>
-                <h4>Who is our park made for?</h6>
-                    <ul class="list-visitors">
-                        <li>
-                            <img src="image/heart-regular.png" alt="">
-
-                            <a href="#">Ghibli Fans</a>
-                            <hr>
-                            <p>Search no more, this is your paradise.</p>
-                        </li>
-                        <li>
-                            <img src="image/smile-beam-solid.png" alt="">
-
-                            <a href="#">Family</a>
-                            <hr>
-                            <p>Nonstop fun for all generations, from 1 to 100 years old!</p>
-                        </li>
-                        <li>
-                            <img src="image/yen-sign-solid.png" alt="">
-
-                            <a href="#">Japanese culture lovers</a>
-                            <hr>
-                            <p>Immerse yourself in a world of fantasy, 1000% blended with Japanese culture</p>
-                        </li>
-                        <li>
-                            <img src="image/leaf-solid.png" alt="">
-
-                            <a href="#">Nature lovers</a>
-                            <hr>
-                            <p>forests, lakes, animals… everywhere!</p>
-                        </li>
-                    </ul>
+        <!-- FAQ Section -->
+        <section class="container info-section">
+            <div>
+                <h1>FAQ</h1>
             </div>
         </section>
 
-
-
-        <!-- This section is used to display the apps that are available for the park. -->
         <section class="container">
-            <h1>Download our Apps!</h1>
-
-
-            <div class="app-container">
-                <div class="app-text">
-                    <p>Stay updated to the current news of the park and plan your trip with ease with
-                        our app.
-                    </p>
-
-                    <ul>
-                        <li>Avoid the queues! Book with our app and use the express queue to enter</li>
-                        <li>Make the most of your day by viewing live waiting times of attractions.</li>
-                        <li>Be the first to know about special events</li>
-                        <li>First time users get 15% off tickets!</li>
-                    </ul>
-                </div>
-                <div class="app-image">
-                    <img src="/image/hill-2_iphone12black_portrait.png" alt="" />
-                </div>
-            </div>
-        </section>
-
-        <!-- This section is used to display the latest offers of the park. -->
-        <section class="container">
-            <div class="offers">
-                <h1>Offers/Discount</h1>
-                <p>Information regarding discounts and upcoming offers</p>
-            </div>
+            <!-- This section details the information about the park, such as location, weather and ticket sales. -->
+            <h2>Useful Information</h2>
+            <ol>
+                <li>
+                    <h3>How to get there</h3>
+                </li>
+                <img src="/image/map.png" alt="map" height="200" width="400" />
+                <li>
+                    <h3>Weather Forecast</h3>
+                </li>
+                <img src="/image/weather.gif" alt="weather" height="250" width="400" />
+                <li>
+                    <h3>Date and Time Availability</h3>
+                </li>
+                <img src="/image/date.png" alt="date" height="300" width="400" />
+                <li>
+                    <h3>Where to buy ticket</h3>
+                </li>
+                <img src="/image/ghibli.jpeg" alt="tickets" height="300" width="300" />
+                <li>
+                    <h3>Safety and Requirement</h3>
+                </li>
+                <a>Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam,Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam [Placeholder]
+                </a>
+                <li>
+                    <h3>Policies and Restrictions</h3>
+                </li>
+                <a>Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam,Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam [Placeholder]
+                </a>
+            </ol>
         </section>
     </main>
 
-    <footer>
-        <div class="wrapper">
+    <hr />
+
+    <footer class="container">
+        <div>
             <h5 class="text-left">Newsletter</h5>
 
             <form action="">
@@ -230,7 +250,7 @@
                 <button>Sign-Up</button>
             </form>
         </div>
-        <div class="wrapper contact">
+        <div class="contact">
             <h5>Contact Us</h5>
             <div class="contact-item">
                 <img src="./icons/phone.svg" alt="" />
@@ -242,8 +262,8 @@
             </div>
         </div>
 
-        <div class="wrapper ">
-            <h5 class="follow">Follow Us</h5>
+        <div>
+            <h5>Follow Us</h5>
             <ul class="icon-list">
                 <li>
                     <a href="https://www.facebook.com/"><img class="icon" src="./icons/facebook.svg"
@@ -263,10 +283,10 @@
                 </li>
             </ul>
         </div>
-        <div class="wrapper appimg">
+        <div>
             <h5>Download Apps</h5>
 
-            <ul>
+            <ul class="icon-list">
                 <li>
                     <a href="https://www.apple.com/fr/store/"><img class="icon" src="./icons/ios.svg"
                             alt="access to Ghibli Park ios app" /></a>
