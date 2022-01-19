@@ -1,4 +1,4 @@
-/* global stylings */
+/*------- global stylings -------- */
 
 * {
     margin: 0;
@@ -66,7 +66,7 @@ section {
     padding: 1.5rem 0;
 }
 
-/******* nav section ********/
+/*---------- nav section -------------*/
 
 .main-head{
     background: rgb(39, 45, 53);
@@ -192,9 +192,9 @@ button:hover {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffa906",endColorstr="#00d4ff",GradientType=1);
 }
 
-/* hero section */
+/*------- hero section -------*/
 
-.hero {
+/* .hero {
     min-height: 90vh;
     background: linear-gradient(rgba(0, 0, 0, 0.75), transparent),
         url("../image/christmas.png");
@@ -217,11 +217,11 @@ button:hover {
 }
 .hero button {
     font-size: 1.3rem;
-}
+} */
 
 
 
- /* The main sliding banner */
+ /*------- The main sliding banner ------*/
 
  .carousel-wrapper{
     background-color: white;
@@ -255,7 +255,7 @@ button:hover {
   }
 
   .arrow{
-    border: solid rgba(0, 0, 0,0.5);
+    border: solid rgba(255, 255, 255, 0.3);
     border-width: 0 7px 7px 0;
     display: inline-block;
     padding: 17px; 
@@ -328,12 +328,8 @@ button:hover {
       opacity: 1;
     }
   
-  
-  
-  
 
-
-/* footer section */
+/*------- footer section --------*/
 
 /* global styles */
 footer {
@@ -676,7 +672,7 @@ form label {
     padding: 0.35rem 1rem;
 }
 
-/* Styles for attractions page */
+/*------ Styles for attractions page -----*/
 
 .home-attractions{
     display: flex;
@@ -684,7 +680,7 @@ form label {
 
 .home-attractions > *{
     flex: 1 1 0;
-}
+} 
 
 .attraction-card{
     display: flex;
@@ -694,6 +690,7 @@ form label {
     background: rgba(255,255,255,0);
     overflow: none;
     text-align: center;
+    
 }
 
 .attraction-card figure{
@@ -703,6 +700,7 @@ form label {
     position: relative;
     overflow: hidden;
     border-radius: 0.5rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .attraction-card figcaption{
@@ -740,6 +738,27 @@ form label {
     transform: scale3d(1.15, 1.15, 1);
     filter: brightness(0.5);
 }
+
+@media screen and (max-width:780px){
+    .home-attractions{
+        display: inline-block;
+    }
+
+    figcaption p {
+        font-size: 19px;
+        margin-bottom: 13px;
+    }
+/*     
+    .attraction-card {
+        max-height: 350px;
+    }
+     */
+    /* .home-attractions > *{
+        flex: auto
+    } */
+}
+
+/*---- attractions  end -----*/
 
 .tabs-navigation {
     display: flex;
