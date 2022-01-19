@@ -50,6 +50,7 @@ blockquote {
 }
 
 
+
 /* Container styles, this adds margin to the left and right of the content and centers input */
 .container {
     max-width: 1440px;
@@ -71,7 +72,7 @@ section {
     background: rgb(39, 45, 53);
     position: sticky;
     top: 0px;
-    z-index: 1;
+    z-index: 5;
     box-shadow: 0 5px 10px -5px black;
 }
 nav {
@@ -217,6 +218,120 @@ button:hover {
 .hero button {
     font-size: 1.3rem;
 }
+
+
+
+ /* The main sliding banner */
+
+ .carousel-wrapper{
+    background-color: white;
+    display: flex;
+    height:500px;
+    position:relative;
+    max-width:1360px;
+    margin:0 auto;
+  }
+  .carousel-item{
+    position:absolute;
+    color: white;
+    text-shadow: 1px 1px 2px rgb(70, 69, 69);
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:25px 50px;
+    font-size: 18px;
+    opacity:0;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+
+  }
+  .carousel-item h1{   
+    padding-top: 300px;
+    margin-bottom: 15px;
+  }
+  .carousel-item h1 a{   
+    z-index: 3;
+  }
+
+  .arrow{
+    border: solid rgba(0, 0, 0,0.5);
+    border-width: 0 7px 7px 0;
+    display: inline-block;
+    padding: 17px; 
+  }
+  .arrow:hover {
+    border-width: 0 9px 9px 0;
+    padding: 19px; 
+  }
+
+  .arrow-prev{
+    left:30px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(135deg);
+  }
+   
+  .arrow-next{
+    right:30px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(-45deg);
+    }
+  
+  .light{
+    color:white;
+  }
+  
+  @media (max-width: 480px) {
+        .arrow, .light .arrow {
+          background-size: 10px;
+          background-position: 10px 50%;
+        }
+      }
+  
+  /*Select every element*/
+  [id^="item"] {
+      display: none;
+    }
+  
+  .item-1 {
+      z-index: 2;
+      opacity: 1;
+    background:url('/image/warehouse-design.jpeg');
+    background-size:cover;
+    -webkit-box-shadow: inset 5px -32px 35px -4px rgba(0,0,0,0.7); 
+    box-shadow: inset 20px -100px 100px 100px rgba(0,0,0,0.5);
+
+    }
+  .item-2{
+    background:url('https://upload.wikimedia.org/wikipedia/commons/c/c5/Aerial_view_%2841514983791%29.jpg');
+    background-size:cover;
+    box-shadow: inset 20px -100px 100px 100px rgba(0,0,0,0.5);
+  }
+  .item-3{
+    background:url('/image/hill-3.jpeg');
+    background-size:cover;
+    box-shadow: inset 20px -100px 100px 100px rgba(0,0,0,0.5);
+  }
+  
+  *:target ~ .item-1 {
+      opacity: 0;
+    }
+  
+  #item-1:target ~ .item-1 {
+      opacity: 1;
+    }
+  
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+      z-index: 3;
+      opacity: 1;
+    }
+  
+  
+  
+  
+
 
 /* footer section */
 
