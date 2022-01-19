@@ -224,7 +224,7 @@ button:hover {
 footer {
     width: 100%;
     margin: auto;
-    display:inline-flex;
+    display: flex;
     min-height: 150px;
     justify-content:space-around;
     flex-wrap: wrap;
@@ -233,11 +233,11 @@ footer {
 }
 
 .wrapper {
-    flex: auto;
+    flex: 1 1 18rem;
     min-height: 10vh;
     margin: 1rem 1rem;
     text-align: left;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     background: none;
     padding: 1rem;
@@ -276,7 +276,7 @@ footer input {
 }
 
 footer button {
-    /* border-radius: 0.5rem; */
+    border-radius: 0.5rem;
     margin-bottom: 1rem;
 }
 footer h3 {
