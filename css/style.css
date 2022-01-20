@@ -223,111 +223,120 @@ button:hover {
 
  /*------- The main sliding banner ------*/
 
- .carousel-wrapper{
+.carousel-wrapper{
     background-color: white;
     display: flex;
     height:500px;
     position:relative;
     max-width:1360px;
     margin:0 auto;
-  }
-  .carousel-item{
+}
+.carousel-item{
     position:absolute;
     color: white;
-    text-shadow: 1px 1px 2px rgb(70, 69, 69);
     top:0;
     bottom:0;
     left:0;
     right:0;
     padding:25px 50px;
-    font-size: 18px;
     opacity:0;
     transition: all 0.5s ease-in-out;
+    text-shadow: 1px 1px 2px rgb(70, 69, 69);
     overflow: hidden;
-
-  }
-  .carousel-item h1{   
+}
+.carousel-item h1{   
     padding-top: 300px;
     margin-bottom: 15px;
-  }
-  .carousel-item h1 a{   
+}
+.carousel-item h1 a p{   
     z-index: 3;
-  }
+}
 
-  .arrow{
+.carousel-description {
+    font-size: 18px;
+}
+
+.arrow{
     border: solid rgba(255, 255, 255, 0.3);
     border-width: 0 7px 7px 0;
     display: inline-block;
     padding: 17px; 
-  }
-  .arrow:hover {
+}
+.arrow:hover {
     border-width: 0 9px 9px 0;
     padding: 19px; 
-  }
+}
 
-  .arrow-prev{
+.arrow-prev{
     left:30px;
     position:absolute;
     top:50%;
     transform:translateY(-50%) rotate(135deg);
-  }
-   
-  .arrow-next{
+}
+
+.arrow-next{
     right:30px;
     position:absolute;
     top:50%;
     transform:translateY(-50%) rotate(-45deg);
-    }
+}
   
-  .light{
+.light{
     color:white;
-  }
-  
-  @media (max-width: 480px) {
-        .arrow, .light .arrow {
-          background-size: 10px;
-          background-position: 10px 50%;
-        }
-      }
-  
-  /*Select every element*/
-  [id^="item"] {
-      display: none;
+}
+
+@media (max-width: 480px) {
+    .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
     }
-  
-  .item-1 {
-      z-index: 2;
-      opacity: 1;
+}  
+
+  /*Select every element*/
+[id^="item"] {
+    display: none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
     background:url('/image/warehouse-design.jpeg');
     background-size:cover;
     -webkit-box-shadow: inset 5px -32px 35px -4px rgba(0,0,0,0.7); 
     box-shadow: inset 20px -100px 100px 100px rgba(0,0,0,0.5);
-
-    }
-  .item-2{
+}
+.item-2{
     background:url('https://upload.wikimedia.org/wikipedia/commons/c/c5/Aerial_view_%2841514983791%29.jpg');
     background-size:cover;
     box-shadow: inset 20px -100px 100px 100px rgba(0,0,0,0.5);
-  }
-  .item-3{
+}
+.item-3{
     background:url('/image/hill-3.jpeg');
     background-size:cover;
     box-shadow: inset 20px -100px 100px 100px rgba(0,0,0,0.5);
-  }
-  
-  *:target ~ .item-1 {
-      opacity: 0;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+}
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+}
+
+@media all and (max-width: 768px) {
+   .carousel-item h1{
+       font-size: 26x;
+   }
+   .carousel-description {
+        font-size: 14px;
     }
-  
-  #item-1:target ~ .item-1 {
-      opacity: 1;
-    }
-  
-  #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
-      z-index: 3;
-      opacity: 1;
-    }
-  
+}
 
 /*------- footer section --------*/
 
@@ -426,11 +435,12 @@ form label {
     background: rgb(53, 61, 72);
     height: 40px;
     width: 100%;
-    text-align: center;
     position: relative;
     bottom: 0px;
     left: 0px;
-    padding: 13px; 
+    padding: 10px 25px; 
+    font-size: 15px;
+    text-align: left;
 }
 
 /********* media queries *********/
@@ -482,7 +492,7 @@ form label {
 
 
 /* Home page styles */
-.current-news{
+/* .current-news{
     display: flex;
     flex-wrap: wrap;
 }
@@ -507,14 +517,16 @@ form label {
     text-align: left;
     font-size: 1.5rem;
     font-weight: 300;
-}
-.visitors h4{
-    padding: 2rem;
+} */
+
+/* the category of visitors section */
+.visitors h3{
+    margin-bottom: 20px;
 }
 .visitors{
     background-color: rgb(39, 45, 53);
     color: #fff;
-    padding-bottom: 8rem;
+    padding-bottom: 4rem;
 }
 
 .visitors h1{
@@ -532,13 +544,15 @@ form label {
     display: flex;
     text-align: center;
     font-weight: 300;
+    margin-bottom: 1rem;
+
 }
 
 .list-visitors li {
     
     flex: 1 1 0;
     border: 1px solid;
-    margin-right: 2rem;
+    margin: 2rem 1rem 2rem 1rem;
     border-radius: 1rem;
     padding: 2rem;
     display: flex;
@@ -555,23 +569,25 @@ form label {
     margin-bottom: 1rem;
 }
 
-
 .list-visitors img:hover{
     filter: hue-rotate(135deg)
 }
 
-.list-visitors li:last-child {
-    margin-right: 0;
+@media  (max-width:768px){
+    .list-visitors{
+        display: inline-block;
+        margin: 1rem 1rem 2rem 1rem;
+    }
 }
 
+/*this is Download App sectio*/
 .app-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns:1fr 1fr; 
 }
-
-.app-container > *{
-    flex: 1 1 0;
+.app-hr {
+    align: left;
+    width: 500px;
 }
 
 .app-container .app-text p
@@ -588,11 +604,6 @@ form label {
     margin-bottom: 10px;
 }
 
-/* ol > li
-{
-    margin: 1rem;
-} */
-
 .tickets-list {
     margin-left: 2rem;
 }
@@ -603,17 +614,36 @@ form label {
     font-weight: 300;
 }
 
-.app-container .app-image
-{
-    display: flex;
-    justify-content: center;
-}
-
 .app-container .app-image img{
-    max-width: 60%;
+    max-width: 100%;
+    max-height: 800px;
     position: relative;
     top: -13rem;
-    margin-bottom: -13rem;
+    margin: 0 2rem -17rem 6rem;
+}
+
+@media screen and (max-width:768px){
+    .app-container .app-text p{
+        text-align: left;
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-bottom: 2.5rem;
+    }
+
+    .app-container .app-text ul li{
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+    .app-container  .app-image img{
+        max-height: 400px;
+        top: 0rem;
+        margin-left: 2rem;
+        margin-bottom: -10rem;
+    }
+    .app-text ul{
+        margin-left: 30px;
+        margin-bottom: 3rem;
+    }
 }
 
 /* Styles for info page*/
