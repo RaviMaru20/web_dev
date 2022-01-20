@@ -8,7 +8,7 @@
 
 body {
     font-family: Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    background: rgb(39, 45, 53);
+    /* background: rgb(39, 45, 53); */
     color: #333;
 }
 
@@ -65,6 +65,32 @@ main{
 section {
     padding: 1.5rem 0;
 }
+
+.covid-notification {
+    color: white;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    background: rgb(39, 45, 53, 0.8);
+    padding: 0 3rem 0 3rem;
+    flex-wrap: wrap;
+}
+.covid-notification a {
+    text-decoration: underline;
+}
+
+.close-icon {
+    fill: white;
+    position: fixed;
+    top: 10px;
+    right: 33px;
+}
+.close-icon:hover {
+    fill: rgb(145, 145, 145);
+}
+
 
 /*---------- nav section -------------*/
 
@@ -226,7 +252,7 @@ button:hover {
 .carousel-wrapper{
     background-color: white;
     display: flex;
-    height:500px;
+    height:550px;
     position:relative;
     max-width:1360px;
     margin:0 auto;
@@ -245,11 +271,14 @@ button:hover {
     overflow: hidden;
 }
 .carousel-item h1{   
-    padding-top: 300px;
+    padding-top: 320px;
     margin-bottom: 15px;
 }
 .carousel-item h1 a p{   
     z-index: 3;
+}
+.carousel-item::nth-child(-n +2){
+    padding-right: 200px;
 }
 
 .carousel-description {
@@ -465,7 +494,7 @@ form label {
         text-align: center;
     }
     .search-icon{
-        position: fixed;
+        position: absolute;
         top:10px;
         left: 10px;
     }
@@ -487,8 +516,13 @@ form label {
     .language-content {
         margin-left: 20px;
     }
+    .close-icon {
+        fill: white;
+        position: fixed;
+        top: 10px;
+        right: 15px;
+    }
 }
-
 
 
 /* Home page styles */
