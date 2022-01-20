@@ -367,6 +367,18 @@ button:hover {
     }
 }
 
+.chat-box img{
+    width: 80px;
+    position: fixed;
+    z-index: 4;
+    bottom: 5px;
+    right:15px;
+}
+
+.chat-box img:hover{
+    transform: scale(1.1)
+}
+
 /*------- footer section --------*/
 
 /* global styles */
@@ -469,7 +481,7 @@ form label {
     left: 0px;
     padding: 10px 25px; 
     font-size: 15px;
-    text-align: left;
+    text-align: center;
 }
 
 /********* media queries *********/
@@ -521,6 +533,9 @@ form label {
         position: fixed;
         top: 10px;
         right: 15px;
+    }
+    .footer-copyright {
+        text-align: left;
     }
 }
 
