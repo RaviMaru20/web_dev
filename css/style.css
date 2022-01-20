@@ -1,5 +1,4 @@
 /*------- global stylings -------- */
-
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +13,7 @@ body {
 
 h1 {
     font-size: 32px;
+    margin: 0.87rem 0
 }
 h2 {
     font-size: 24px;
@@ -21,6 +21,7 @@ h2 {
 }
 h3 {
     font-size: 18.72px;
+    margin: 0.67em 0
 }
 h4 {
     font-size: 16px;
@@ -37,10 +38,13 @@ a {
     text-decoration: none;   
 }
 
-li, button {
+button {
     font-size: 1.3rem;
 }
 
+p{
+    margin: 0.67em 0;
+}
 
 blockquote {
     margin-top: 2rem;
@@ -48,8 +52,6 @@ blockquote {
     font-size: 1.3rem;
     font-style: italic;
 }
-
-
 
 /* Container styles, this adds margin to the left and right of the content and centers input */
 .container {
@@ -675,7 +677,7 @@ form label {
     margin-bottom: 10px;
 }
 
-.tickets-list {
+.info-section ul,ol {
     margin-left: 2rem;
 }
 
@@ -717,6 +719,8 @@ form label {
     }
 }
 
+
+
 /* Styles for info page*/
 
 .page-heading{
@@ -739,7 +743,6 @@ form label {
 
 .info-section{
     display: flex;
-    align-items: end;
 }
 
 
@@ -771,6 +774,32 @@ form label {
     border: 1px solid #999;
     border-radius: 0.6rem;
     padding: 0.35rem 1rem;
+}
+
+/* FAQ section */
+.faq-section{
+    text-align: center;
+}
+
+.faq-section h3{
+    text-decoration: underline;
+}
+
+.faq-section summary:hover{
+    cursor: pointer;
+}
+
+
+.faq-section p{
+    padding: 1rem;
+}
+
+summary{
+    font-weight: bold;
+}
+
+details{
+    margin-bottom: 1rem;
 }
 
 /*------ Styles for attractions page -----*/
