@@ -64,7 +64,7 @@ blockquote {
     padding: 2rem 5rem;
 }
 
-blockquote::before{
+blockquote::before {
     position: absolute;
     left: 0;
     top: 0;
@@ -73,7 +73,7 @@ blockquote::before{
     font-size: 7rem;
 }
 
-blockquote span{
+blockquote span {
     display: block;
     font-weight: bolder;
     margin-top: 1rem;
@@ -87,6 +87,10 @@ blockquote span{
 
 .display-flex > * {
     flex: 1 1 0;
+}
+
+.text-center{
+    text-align: center;
 }
 
 /* Container styles, this adds margin to the left and right of the content and centers input */
@@ -914,6 +918,29 @@ details {
     background-position: center;
 }
 
+.attraction-highlight h1 {
+    color: #126acd;
+    font-weight: 300;
+}
+
+.attraction-highlight p {
+    line-height: 1.5;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.attraction-highlight img {
+    width: 100%;
+    display: block;
+}
+
+.attraction-highlight.align-right img {
+    margin-left: auto;
+}
+
+.attraction-highlight.align-left img {
+    margin-right: auto;
+}
 .attraction-card {
     display: flex;
     flex-direction: column;
@@ -1034,10 +1061,25 @@ details {
 .tabs-content {
     border-top: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     padding-top: 1em;
 }
+
+.tabs-content .attraction-card{
+    display: inline-block;
+}
+
+.tabs-content .attraction-card figure{
+    height: 75%;
+}
+
+.tabs-content .attraction-card img{
+    width: 100%;
+}
+
+
+
 
 .tabs-content .card {
     width: 100%;
