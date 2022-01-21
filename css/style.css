@@ -560,6 +560,10 @@ form label {
         text-align: left;
         padding-left: 50px;
     }
+    .wrapper:nth-of-type(1) {
+        margin-right:4rem;
+    }
+
 }
 
 
@@ -648,7 +652,8 @@ form label {
 @media  (max-width:768px){
     .list-visitors{
         display: inline-block;
-        margin: 1rem 1rem 2rem 1rem;
+        width: 90%;
+        margin: 1rem 1rem 2rem 2rem;
     }
 }
 
@@ -960,14 +965,16 @@ details{
     }
 
     figcaption p {
-        font-size: 19px;
+        font-size: 16px;
         margin-bottom: 13px;
     }
-/*     
+    
     .attraction-card {
         max-height: 350px;
+        width: 90%;
+        margin-left: 2rem;
     }
-     */
+    
     /* .home-attractions > *{
         flex: auto
     } */
