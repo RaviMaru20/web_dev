@@ -419,11 +419,12 @@ button:hover {
     display: flex;
     position: sticky;
     bottom: 0;
+    z-index: 5;
 }
 
 .chat-box img {
     width: 80px;
-    z-index: 4;
+    
 }
 .chat-box img:hover {
     transform: scale(1.1);
